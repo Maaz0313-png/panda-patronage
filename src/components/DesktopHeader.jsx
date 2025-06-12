@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export const DesktopHeader = ({ activeLink = "Home" }) => {
@@ -35,11 +35,11 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
 
   return (
     <header
-      className={`${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+      className={`overflow-x-hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
     >
       <motion.div
         layout
-        transition={{ type: "spring", stiffness: 300, damping: 30 }}
+        transition={{ type: "spring", stiffness: 150, damping: 40 }}
         className={`flex items-center ${
           scrolled
             ? "mx-auto mt-3 h-[58px] w-[529px] gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
