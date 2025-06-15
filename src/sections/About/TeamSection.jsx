@@ -1,4 +1,4 @@
-import { PiDribbbleLogoDuotone, PiLinkedinLogoDuotone, PiTwitchLogoDuotone } from "react-icons/pi";
+import { PiDribbbleLogoDuotone, PiLinkedinLogoDuotone, PiTwitterLogoDuotone } from "react-icons/pi";
 
 const teamMembers = [
   {
@@ -99,7 +99,7 @@ const TeamSection = () => (
             </div>
             <div className="flex w-full gap-3 text-left text-gray-400">
               <a href={member.socials.twitter} aria-label="Twitter">
-                <PiTwitchLogoDuotone className="h-5 w-5" />
+                <PiTwitterLogoDuotone className="h-5 w-5" />
               </a>
               <a href={member.socials.dribbble} aria-label="Dribbble">
                 <PiDribbbleLogoDuotone className="h-5 w-5" />
