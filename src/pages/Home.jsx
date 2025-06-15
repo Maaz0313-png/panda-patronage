@@ -5,7 +5,7 @@ import ImpactStatement from "../sections/Home/ImpactStatement";
 import PricingSection from "../sections/Home/PricingSection";
 import TestimonialsSection from "../sections/Home/TestimonialsSection";
 import ProjectShowcase from "../sections/Home/ProjectShowcase";
-import FaqsSection from "../sections/Home/FaqsSection";
+import FaqsSection from "../components/FaqsSection";
 
 const Home = () => {
   return (

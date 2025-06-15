@@ -4,7 +4,7 @@ import {
   StatsSection,
 } from "../sections/About/DirectorSection";
 import TeamSection from "../sections/About/TeamSection";
-import FaqsSection from "../sections/Home/FaqsSection";
+import FaqsSection from "../components/FaqsSection";
 
 const About = () => {
   return (
