@@ -55,7 +55,7 @@ const teamMembers = [
   {
     name: "Sarah Smith",
     role: "Project Manager",
-    img: "https://framerusercontent.com/images/HH8KrojyxZx6X20z1r13CSwiiWE.jpg",
+    img: "https://framerusercontent.com/images/DBL6ct1qK3lvpE5gdCOeBR2CZQ.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -65,7 +65,7 @@ const teamMembers = [
   {
     name: "David Johnson",
     role: "Founder",
-    img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=400&h=400&q=80",
+    img: "https://framerusercontent.com/images/HH8KrojyxZx6X20z1r13CSwiiWE.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
