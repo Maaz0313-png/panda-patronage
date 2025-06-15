@@ -1,4 +1,5 @@
 import { FiTwitter, FiDribbble, FiLinkedin } from 'react-icons/fi';
+import { PiDribbbleLogoDuotone, PiLinkedinLogoDuotone, PiTwitterLogoDuotone } from 'react-icons/pi';
 
 const Footer = () => {
   return (
@@ -37,9 +38,9 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto border-t border-gray-800 flex flex-row justify-between items-center py-4 px-2">
           <p className="text-gray-500 text-sm">© Panda-Patronage 2025</p>
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><FiTwitter size={20} /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><FiDribbble size={20} /></a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><FiLinkedin size={20} /></a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><PiTwitterLogoDuotone size={20} /></a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><PiDribbbleLogoDuotone size={20} /></a>
+            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300"><PiLinkedinLogoDuotone size={20} /></a>
           </div>
         </div>
       </div>

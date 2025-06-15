@@ -1,0 +1,1 @@
+User prefers using tailwindcss for styling and prefers to use the latest version of tailwindcss. User prefers to use the latest version of react and next.js. User prefers to use the latest version of typescript. User prefers to use the latest version of node.js. User prefers to use the latest version of express.js. Use. User prefers to use the latest version of it.
