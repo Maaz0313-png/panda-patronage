@@ -1,4 +1,5 @@
 import ArticleBlogCard from "../../components/ArticleBlogCard";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const articles = [
   {
@@ -108,20 +109,22 @@ const BlogGridSection = () => {
       </p>
       <div className="grid grid-cols-1 justify-center gap-8 md:grid-cols-2 lg:grid-cols-3">
         {articles.map((article, idx) => (
-          <div key={idx} className="flex justify-center">
-            <div className="w-[368px]">
-              <ArticleBlogCard
-                {...article}
-                image={article.image}
-                date={article.date}
-                tag={article.tag}
-                title={article.title}
-                description={article.description}
-                cardClassName="w-[368px]"
-                imgClassName="w-[368px] h-[256.5px] rounded-[24px] object-cover"
-              />
+          <ScrollReveal key={idx} delay={idx * 0.1}>
+            <div className="flex justify-center">
+              <div className="w-[368px]">
+                <ArticleBlogCard
+                  {...article}
+                  image={article.image}
+                  date={article.date}
+                  tag={article.tag}
+                  title={article.title}
+                  description={article.description}
+                  cardClassName="w-[368px]"
+                  imgClassName="w-[368px] h-[256.5px] rounded-[24px] object-cover"
+                />
+              </div>
             </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>

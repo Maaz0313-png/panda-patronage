@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const testimonials = [
   {
@@ -43,54 +44,54 @@ const logos = [
 
 const TestimonialsSection = () => {
   return (
-    <>
-      <section className="py-16 bg-white flex flex-col items-center">
-        <div className="text-center mb-10">
-          <span className="inline-block bg-gray-100 text-gray-700 text-xs rounded-full px-4 py-1 mb-3 font-medium tracking-wide">
+    <ScrollReveal>
+      <section className="flex flex-col items-center bg-white py-16">
+        <div className="mb-10 text-center">
+          <span className="mb-3 inline-block rounded-full bg-gray-100 px-4 py-1 text-xs font-medium tracking-wide text-gray-700">
             Testimonials
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+          <h2 className="mb-2 text-3xl font-bold md:text-4xl">
             Our satisfied customers
           </h2>
-          <p className="text-gray-500 text-base max-w-xl mx-auto">
+          <p className="mx-auto max-w-xl text-base text-gray-500">
             Panda Patronage empowers teams with seamless Strategies and
             time-saving Solutions. Discover client success!
           </p>
         </div>
-        <div className="flex flex-wrap md:flex-nowrap gap-7 justify-center mb-12 w-full">
+        <div className="mb-12 flex w-full flex-wrap justify-center gap-7 md:flex-nowrap">
           {testimonials.map((t, i) => (
             <div
-              className="min-w-[320px] max-w-[340px] flex-1 rounded-2xl shadow-md flex flex-col gap-4 items-start px-6 py-7"
+              className="flex max-w-[340px] min-w-[320px] flex-1 flex-col items-start gap-4 rounded-2xl px-6 py-7 shadow-md"
               style={{ background: t.bg }}
               key={i}
             >
               <div className="flex items-center gap-3.5">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md ring-2 ring-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-2 ring-white">
                   <img
                     src={t.img}
                     alt={t.name}
                     width={42}
                     height={42}
-                    className="w-[42px] h-[42px] rounded-full object-cover"
+                    className="h-[42px] w-[42px] rounded-full object-cover"
                   />
                 </div>
                 <div>
-                  <div className="font-semibold text-base text-gray-900">
+                  <div className="text-base font-semibold text-gray-900">
                     {t.name}
                   </div>
-                  <div className="text-sm text-gray-400 mt-0.5">
+                  <div className="mt-0.5 text-sm text-gray-400">
                     – {t.company}
                   </div>
                 </div>
               </div>
-              <div className="text-[1.08rem] text-gray-800 leading-relaxed mt-1">
+              <div className="mt-1 text-[1.08rem] leading-relaxed text-gray-800">
                 “{t.text}”
               </div>
             </div>
           ))}
         </div>
-        <div className="relative w-full max-w-6xl h-14 mx-auto overflow-hidden mt-4">
-          <div className="flex items-center gap-11 animate-logo-slider will-change-transform">
+        <div className="relative mx-auto mt-4 h-14 w-full max-w-6xl overflow-hidden">
+          <div className="animate-logo-slider flex items-center gap-11 will-change-transform">
             {[...logos, ...logos].map((logo, i) => (
               <img
                 src={logo}
@@ -101,20 +102,26 @@ const TestimonialsSection = () => {
             ))}
           </div>
           <div
-            className="pointer-events-none absolute top-0 left-0 w-20 h-full z-10"
+            className="pointer-events-none absolute top-0 left-0 z-10 h-full w-20"
             style={{
               background: "linear-gradient(90deg, #fff 70%, transparent 100%)",
             }}
           />
           <div
-            className="pointer-events-none absolute top-0 right-0 w-20 h-full z-10"
+            className="pointer-events-none absolute top-0 right-0 z-10 h-full w-20"
             style={{
               background: "linear-gradient(270deg, #fff 70%, transparent 100%)",
             }}
           />
         </div>
       </section>
-      <style>{`
+    </ScrollReveal>
+  );
+};
+
+export default TestimonialsSection;
+
+<style>{`
         @keyframes logo-slider {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
@@ -122,9 +129,4 @@ const TestimonialsSection = () => {
         .animate-logo-slider {
           animation: logo-slider 5s linear infinite;
         }
-      `}</style>
-    </>
-  );
-};
-
-export default TestimonialsSection;
+      `}</style>;

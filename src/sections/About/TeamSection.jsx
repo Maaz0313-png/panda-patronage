@@ -1,4 +1,9 @@
-import { PiDribbbleLogoDuotone, PiLinkedinLogoDuotone, PiTwitterLogoDuotone } from "react-icons/pi";
+import {
+  PiDribbbleLogoDuotone,
+  PiLinkedinLogoDuotone,
+  PiTwitterLogoDuotone,
+} from "react-icons/pi";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const teamMembers = [
   {
@@ -74,45 +79,47 @@ const teamMembers = [
 ];
 
 const TeamSection = () => (
-  <section className="bg-[#f2f2f2] py-20">
-    <div className="mx-auto max-w-6xl px-6">
-      <h2 className="mb-4 text-center text-5xl font-bold">
-        Meet the Minds Behind Neutra
-      </h2>
-      <p className="mx-auto mb-14 max-w-[560px] text-center text-lg font-normal text-gray-600">
-        Discover the talented individuals who bring Neutra to life, each
-        dedicated to pushing the boundaries of digital design.
-      </p>
-      <div className="grid grid-cols-1 justify-items-center gap-20 sm:grid-cols-2 lg:grid-cols-4">
-        {teamMembers.map((member) => (
-          <div key={member.name} className="flex w-[276px] flex-col">
-            <img
-              src={member.img}
-              alt={member.name}
-              className="mb-6 h-[276px] w-[276px] rounded-4xl object-cover"
-            />
-            <div className="mb-1 w-full text-left text-lg font-semibold">
-              {member.name}
+  <ScrollReveal>
+    <section className="bg-[#f2f2f2] py-20">
+      <div className="mx-auto max-w-6xl px-6">
+        <h2 className="mb-4 text-center text-5xl font-bold">
+          Meet the Minds Behind Neutra
+        </h2>
+        <p className="mx-auto mb-14 max-w-[560px] text-center text-lg font-normal text-gray-600">
+          Discover the talented individuals who bring Neutra to life, each
+          dedicated to pushing the boundaries of digital design.
+        </p>
+        <div className="grid grid-cols-1 justify-items-center gap-20 sm:grid-cols-2 lg:grid-cols-4">
+          {teamMembers.map((member) => (
+            <div key={member.name} className="flex w-[276px] flex-col">
+              <img
+                src={member.img}
+                alt={member.name}
+                className="mb-6 h-[276px] w-[276px] rounded-4xl object-cover"
+              />
+              <div className="mb-1 w-full text-left text-lg font-semibold">
+                {member.name}
+              </div>
+              <div className="mb-4 w-full text-left text-base font-normal text-gray-500">
+                {member.role}
+              </div>
+              <div className="flex w-full gap-3 text-left text-gray-400">
+                <a href={member.socials.twitter} aria-label="Twitter">
+                  <PiTwitterLogoDuotone className="h-5 w-5" />
+                </a>
+                <a href={member.socials.dribbble} aria-label="Dribbble">
+                  <PiDribbbleLogoDuotone className="h-5 w-5" />
+                </a>
+                <a href={member.socials.linkedin} aria-label="LinkedIn">
+                  <PiLinkedinLogoDuotone className="h-5 w-5" />
+                </a>
+              </div>
             </div>
-            <div className="mb-4 w-full text-left text-base font-normal text-gray-500">
-              {member.role}
-            </div>
-            <div className="flex w-full gap-3 text-left text-gray-400">
-              <a href={member.socials.twitter} aria-label="Twitter">
-                <PiTwitterLogoDuotone className="h-5 w-5" />
-              </a>
-              <a href={member.socials.dribbble} aria-label="Dribbble">
-                <PiDribbbleLogoDuotone className="h-5 w-5" />
-              </a>
-              <a href={member.socials.linkedin} aria-label="LinkedIn">
-                <PiLinkedinLogoDuotone className="h-5 w-5" />
-              </a>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </ScrollReveal>
 );
 
 export default TeamSection;

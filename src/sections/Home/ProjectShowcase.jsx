@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollReveal from "../../components/ScrollReveal";
 
 const projects = [
   {
@@ -34,64 +35,66 @@ const projects = [
 ];
 
 const ProjectShowcase = () => (
-  <section className="bg-white py-24 px-2 md:px-0">
-    <div className="max-w-6xl mx-auto text-center mb-14">
-      <h2
-        className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
-        style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
-      >
-        Building Digital Excellence with Panda.
-      </h2>
-      <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-        Discover the innovative marketing strategies that set Neutra apart,
-        driving success in the digital landscape.
-      </p>
-    </div>
-    <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      {projects.map((project, idx) => (
-        <div
-          key={project.title}
-          className="bg-[#f6f7fa] rounded-2xl shadow-sm p-6 flex flex-col items-center mb-2"
-          style={{ minHeight: 420 }}
+  <ScrollReveal>
+    <section className="bg-white px-2 py-24 md:px-0">
+      <div className="mx-auto mb-14 max-w-6xl text-center">
+        <h2
+          className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl"
+          style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
         >
+          Building Digital Excellence with Panda.
+        </h2>
+        <p className="mx-auto max-w-2xl text-lg text-gray-500">
+          Discover the innovative marketing strategies that set Neutra apart,
+          driving success in the digital landscape.
+        </p>
+      </div>
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+        {projects.map((project, idx) => (
           <div
-            className="w-full flex justify-center items-center rounded-2xl overflow-hidden mb-6"
-            style={{
-              background:
-                idx % 2 === 0
-                  ? "#23402C"
-                  : "linear-gradient(90deg, #6B4EFF 0%, #A259FF 100%)",
-              height: 322.422,
-              minHeight: 322.422,
-              maxHeight: 322.422,
-            }}
+            key={project.title}
+            className="mb-2 flex flex-col items-center rounded-2xl bg-[#f6f7fa] p-6 shadow-sm"
+            style={{ minHeight: 420 }}
           >
-            <img
-              src={project.img}
-              alt={project.title}
-              className="object-contain w-[532px] h-[322.422px]"
-              style={{ maxWidth: 532, maxHeight: 322.422 }}
-            />
-          </div>
-          <div className="w-full text-left">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              {project.title}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {project.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-white border border-gray-300 text-gray-700 rounded-full px-4 py-1 text-sm font-medium"
-                >
-                  {tag}
-                </span>
-              ))}
+            <div
+              className="mb-6 flex w-full items-center justify-center overflow-hidden rounded-2xl"
+              style={{
+                background:
+                  idx % 2 === 0
+                    ? "#23402C"
+                    : "linear-gradient(90deg, #6B4EFF 0%, #A259FF 100%)",
+                height: 322.422,
+                minHeight: 322.422,
+                maxHeight: 322.422,
+              }}
+            >
+              <img
+                src={project.img}
+                alt={project.title}
+                className="h-[322.422px] w-[532px] object-contain"
+                style={{ maxWidth: 532, maxHeight: 322.422 }}
+              />
+            </div>
+            <div className="w-full text-left">
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">
+                {project.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-gray-300 bg-white px-4 py-1 text-sm font-medium text-gray-700"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
-  </section>
+        ))}
+      </div>
+    </section>
+  </ScrollReveal>
 );
 
 export default ProjectShowcase;

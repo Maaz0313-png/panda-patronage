@@ -1,4 +1,4 @@
-import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const faqs = [
   {
@@ -28,25 +28,31 @@ const faqs = [
 ];
 
 const FaqsSection = () => (
-  <section className="w-full bg-[#f7f7f9] py-20 flex flex-col items-center">
-    <div className="text-center mb-10">
-      <h2 className="text-3xl md:text-4xl font-bold mb-2">FAQs</h2>
-      <p className="text-gray-500 text-base max-w-2xl mx-auto">
-        To make things easier, we've compiled a list of frequently asked
-        questions to address your concerns.
-      </p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-8 w-full max-w-6xl">
-      {faqs.map((faq, i) => (
-        <div key={i} className="text-left">
-          <div className="font-semibold text-lg text-gray-900 mb-1">
-            {faq.q}
-          </div>
-          <div className="text-gray-500 text-base leading-relaxed">{faq.a}</div>
-        </div>
-      ))}
-    </div>
-  </section>
+  <ScrollReveal>
+    <section className="flex w-full flex-col items-center bg-[#f7f7f9] py-20">
+      <div className="mb-10 text-center">
+        <h2 className="mb-2 text-3xl font-bold md:text-4xl">FAQs</h2>
+        <p className="mx-auto max-w-2xl text-base text-gray-500">
+          To make things easier, we've compiled a list of frequently asked
+          questions to address your concerns.
+        </p>
+      </div>
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-x-10 gap-y-8 md:grid-cols-3">
+        {faqs.map((faq, i) => (
+          <ScrollReveal key={i} delay={i * 0.05}>
+            <div className="text-left">
+              <div className="mb-1 text-lg font-semibold text-gray-900">
+                {faq.q}
+              </div>
+              <div className="text-base leading-relaxed text-gray-500">
+                {faq.a}
+              </div>
+            </div>
+          </ScrollReveal>
+        ))}
+      </div>
+    </section>
+  </ScrollReveal>
 );
 
 export default FaqsSection;
