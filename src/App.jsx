@@ -6,6 +6,9 @@ import Cases from "./pages/Cases";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Licensing from "./pages/Licensing";
+import TermsOfUse from "./pages/TermsOfUse";
 
 function App() {
   return (
@@ -16,8 +19,10 @@ function App() {
           <Route path="cases" element={<Cases />} />
           <Route path="about" element={<About />} />
           <Route path="blog" element={<Blogs />} />
-          <Route path="blog" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="licensing" element={<Licensing />} />
+          <Route path="terms-of-use" element={<TermsOfUse />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
