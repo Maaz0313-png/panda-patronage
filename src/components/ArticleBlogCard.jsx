@@ -8,15 +8,27 @@ import React from "react";
  *  - tag: string (e.g., 'UX Design')
  *  - title: string
  *  - description: string
+ *  - href: string (optional, for link destination)
+ *  - cardClassName: string (optional, for custom card width/height)
+ *  - imgClassName: string (optional, for custom image width/height)
+ *
+ * Note: To ensure all cards have the same width in a grid, set the width via the parent grid or pass a consistent cardClassName.
  */
-const ArticleBlogCard = ({ image, date, tag, title, description }) => {
+const ArticleBlogCard = ({
+  image,
+  date,
+  tag,
+  title,
+  description,
+  href = "#",
+  cardClassName = "",
+  imgClassName = "",
+}) => {
   return (
-    <div className="flex h-[547.125px] w-full max-w-[564px] flex-col overflow-hidden rounded-[24px] bg-white">
-      <img
-        src={image}
-        alt={title}
-        className="h-[393.125px] w-full rounded-3xl object-cover"
-      />
+    <div
+      className={`group relative flex flex-col overflow-hidden rounded-[24px] bg-white ${cardClassName}`}
+    >
+      <img src={image} alt={title} className={`object-cover ${imgClassName}`} />
       <div className="flex flex-1 flex-col px-4 py-6">
         <div className="mb-3 flex items-center gap-3">
           <span className="text-sm text-gray-500">{date}</span>
@@ -27,10 +39,17 @@ const ArticleBlogCard = ({ image, date, tag, title, description }) => {
         <div className="font-roboto mb-2 text-[22px] leading-7 font-bold text-gray-900">
           {title}
         </div>
-        <div className="font-roboto flex-1 text-base leading-6 text-gray-600">
+        <div className="font-roboto text-base leading-6 text-gray-600">
+          {/* Removed flex-1 to ensure description is always fully visible */}
           {description}
         </div>
       </div>
+      <a
+        href={href}
+        className="absolute inset-0 z-10"
+        tabIndex="-1"
+        aria-label={title}
+      ></a>
     </div>
   );
 };
