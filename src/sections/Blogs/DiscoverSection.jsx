@@ -1,27 +1,7 @@
 import React from "react";
 import ArticleBlogCard from "../../components/ArticleBlogCard";
 import ScrollReveal from "../../components/ScrollReveal";
-
-// Sample data for the discover section
-const articles = [
-  {
-    image: "https://framerusercontent.com/images/HvEjI5nnCrtIvttqSWsyCuVM.jpg",
-    date: "Nov 15, 2023",
-    tag: "UX Design",
-    title: "Crafting Exceptional User Experiences",
-    description:
-      "In the ever-changing landscape of digital design, UX design stands as a pillar of creating experiences that resonate.",
-  },
-  {
-    image:
-      "https://framerusercontent.com/images/4cF7vTWqSD6k0W86ffeveQjsc2Q.png",
-    date: "Oct 12, 2023",
-    tag: "UI Design",
-    title: "UI Design: Elevating Experiences",
-    description:
-      "In the digital realm, UI design guides user journeys. Crafting remarkable experiences is at the core of web design.",
-  },
-];
+import articles from "../../data/articles";
 
 const DiscoverSection = () => {
   return (
@@ -37,13 +17,16 @@ const DiscoverSection = () => {
         better.
       </h2>
       <div className="flex flex-wrap justify-center gap-8">
-        {articles.map((article, idx) => (
+        {articles.slice(1, 3).map((article, idx) => (
           <ScrollReveal
             key={idx}
             delay={idx * 0.1}
             className="box-border max-w-[564px] min-w-[280px] flex-1"
           >
-            <ArticleBlogCard {...article} />
+            <ArticleBlogCard
+              {...article}
+              href={`/blog/${encodeURIComponent(article.slug)}`}
+            />
           </ScrollReveal>
         ))}
       </div>

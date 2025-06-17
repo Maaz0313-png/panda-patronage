@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Licensing from "./pages/Licensing";
 import TermsOfUse from "./pages/TermsOfUse";
+import BlogDetailDynamic from "./pages/BlogDetailDynamic";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="licensing" element={<Licensing />} />
           <Route path="terms-of-use" element={<TermsOfUse />} />
+          <Route path="blog/:slug" element={<BlogDetailDynamic />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
