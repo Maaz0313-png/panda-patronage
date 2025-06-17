@@ -1,9 +1,8 @@
-import React from "react";
 import { GoArrowLeft } from "react-icons/go";
 import {
   PiClockDuotone,
-  PiCalendarDuotone,
   PiTagDuotone,
+  PiCalendarBlankDuotone,
 } from "react-icons/pi";
 
 export default function BlogDetailSection({ article }) {
@@ -37,7 +36,7 @@ export default function BlogDetailSection({ article }) {
           </span>
           <span className="h-1 w-1 rounded-full bg-gray-300" />
           <span className="flex items-center gap-1 text-sm text-gray-600">
-            <PiCalendarDuotone size={20} className="inline-block" />
+            <PiCalendarBlankDuotone size={20} className="inline-block" />
             {date}
           </span>
           <span className="h-1 w-1 rounded-full bg-gray-300" />
