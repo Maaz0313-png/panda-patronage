@@ -4,7 +4,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 const articles = [
   {
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/vss98kimC7Rm3BkWtOJ4E7PF0.png?scale-down-to=512",
     date: "Nov 24, 2023",
     tag: "UX Design",
     title: "The UX Revolution: Shaping Digital Experiences",
@@ -13,7 +13,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/5GbIrngxJhowImxRpAWUx622xc.png?scale-down-to=512",
     date: "Nov 24, 2023",
     tag: "UI Design",
     title: "Mastering UI Design Trends: A Deep Dive",
@@ -22,7 +22,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/gEuLZWqISbowA6Z5TeEzISEsgs.jpg?scale-down-to=512",
     date: "Nov 23, 2023",
     tag: "Web design",
     title: "The Power of Responsive Web Design",
@@ -31,7 +31,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/32Ao0YOpynUtm9KTYphzi9oT2eQ.jpg?scale-down-to=512",
     date: "Nov 15, 2023",
     tag: "UX Design",
     title: "Mastering the Craft of User Experience Design",
@@ -40,7 +40,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/KjsfCaVMvkjlLs2CFlHb4HZqE.jpg?scale-down-to=1024",
     date: "Nov 5, 2023",
     tag: "UX Design",
     title: "Revolutionizing UX Design",
@@ -48,8 +48,7 @@ const articles = [
       "Learn how exceptional UX design bridges the gap between users and products, fostering exceptional experiences.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80",
+    image: "https://framerusercontent.com/images/CteRnkedt2SHUnA2jjD4Ds7Y.jpg",
     date: "Nov 22, 2023",
     tag: "Web design",
     title: "10 Web Design Trends to Watch in 2023",
@@ -58,7 +57,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/QvhBmuXxN4j9e9lYPSdADXY9mE.jpg?scale-down-to=512",
     date: "Dec 27, 2023",
     tag: "Web design",
     title: "The Art of Responsive Web Design",
@@ -67,7 +66,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/IBw4Si6UN9kcQoOJzmLjrFRQ.jpg?scale-down-to=512",
     date: "Dec 6, 2023",
     tag: "Web design",
     title: "Boosting Website Performance with Smart Design Practices",
@@ -76,7 +75,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/GEAbPaLGvmC6oHqfJUtgkOIs4lA.jpg?scale-down-to=512",
     date: "Nov 3, 2023",
     tag: "UI Design",
     title: "Crafting Exceptional User Interfaces",
@@ -85,7 +84,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/6RUmSize6gWxKuNHFjc2Kg9Vkos.jpg?scale-down-to=512",
     date: "Sep 23, 2023",
     tag: "UI Design",
     title:

@@ -5,8 +5,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 // Sample data for the discover section
 const articles = [
   {
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    image: "https://framerusercontent.com/images/HvEjI5nnCrtIvttqSWsyCuVM.jpg",
     date: "Nov 15, 2023",
     tag: "UX Design",
     title: "Crafting Exceptional User Experiences",
@@ -15,7 +14,7 @@ const articles = [
   },
   {
     image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+      "https://framerusercontent.com/images/4cF7vTWqSD6k0W86ffeveQjsc2Q.png",
     date: "Oct 12, 2023",
     tag: "UI Design",
     title: "UI Design: Elevating Experiences",
