@@ -21,7 +21,6 @@ const ImpactStatement = () => (
       <div className="flex w-full flex-1 items-center justify-center">
         <h2
           className="max-w-3xl text-center text-3xl leading-snug font-normal text-gray-900 md:text-4xl"
-          style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
         >
           We have been creating projects that remain
           <br className="hidden md:block" /> relevant today, tomorrow, and for

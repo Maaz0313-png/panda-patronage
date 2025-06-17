@@ -92,7 +92,7 @@ const OurServices = () => (
           </div>
           {/* Cards grid */}
           <div className="flex h-[584px] w-full flex-row flex-nowrap gap-4">
-            {/* Card 1: Branding (row-span-2, col-start-1) */}
+            {/* Card 1: Branding */}
             <div className="flex flex-[66.447%] flex-col rounded-[9px] bg-white/90 p-6 shadow-md md:h-[93.838%]">
               <img
                 src={services[0].img}
@@ -114,7 +114,7 @@ const OurServices = () => (
                 </span>
               </div>
             </div>
-            <div className="flex h-[584px] flex-col gap-4">
+            <div className="flex h-[548px] flex-col justify-between">
               {/* Card 2: Social Media Management (row 1, col 2) */}
               <div className="flex min-h-[210px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
@@ -133,7 +133,7 @@ const OurServices = () => (
                 </div>
               </div>
               {/* Card 3: Meta Advertisement (row 2, col 2) */}
-              <div className="flex min-h-[220px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <div className="flex md:h-[322px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[3].img}
                   alt="Meta Advertisement"
@@ -145,9 +145,9 @@ const OurServices = () => (
                 <p className="mb-4 text-sm text-gray-700">{services[3].desc}</p>
               </div>
             </div>
-            <div>
-              {/* Card 4: Graphic Designing (row 1, col 3) */}
-              <div className="flex min-h-[220px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+            <div className="flex h-[548px] flex-col justify-between">
+              {/* Card 4: Graphic Designing */}
+              <div className="flex md:h-[342px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[2].img}
                   alt="Graphic Designing"
@@ -160,7 +160,7 @@ const OurServices = () => (
               </div>
 
               {/* Card 5: Web Development (row 2, col 3) */}
-              <div className="flex min-h-[220px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <div className="flex md:h-[190px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
                   {services[4].title}
                 </h3>
