@@ -79,19 +79,18 @@ const teamMembers = [
 ];
 
 const TeamSection = () => (
-  <ScrollReveal>
     <section className="bg-[#f2f2f2] py-20">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="mb-4 text-center text-5xl font-bold">
+        <ScrollReveal as="h2" className="mb-4 text-center text-5xl font-bold">
           Meet the Minds Behind Neutra
-        </h2>
-        <p className="mx-auto mb-14 max-w-[560px] text-center text-lg font-normal text-gray-600">
+        </ScrollReveal>
+        <ScrollReveal as="p" className="mx-auto mb-14 max-w-[560px] text-center text-lg font-normal text-gray-600">
           Discover the talented individuals who bring Neutra to life, each
           dedicated to pushing the boundaries of digital design.
-        </p>
+        </ScrollReveal>
         <div className="grid grid-cols-1 justify-items-center gap-20 sm:grid-cols-2 lg:grid-cols-4">
           {teamMembers.map((member) => (
-            <div key={member.name} className="flex w-[276px] flex-col">
+            <ScrollReveal key={member.name} className="flex w-[276px] flex-col">
               <img
                 src={member.img}
                 alt={member.name}
@@ -114,12 +113,11 @@ const TeamSection = () => (
                   <PiLinkedinLogoDuotone className="h-5 w-5" />
                 </a>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
     </section>
-  </ScrollReveal>
 );
 
 export default TeamSection;

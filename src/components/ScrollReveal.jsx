@@ -9,6 +9,9 @@ import { useEffect, useRef } from "react";
  * @param {number} delay
  * @param {number} duration
  * @param {object} style
+ * @param {string|React.ElementType} as - The HTML element or React component to render as (default: 'div')
+ * @param {string} [alt] - Optional alt attribute for img
+ * @param {string} [src] - Optional src attribute for img
  */
 export default function ScrollReveal({
   children,
@@ -16,13 +19,15 @@ export default function ScrollReveal({
   delay = 0,
   duration = 0.3,
   style = {},
+  as = "div",
+  alt,
+  src,
 }) {
   const controls = useAnimation();
   const lastScrollY = useRef(window.scrollY);
   const [ref, inView] = useInView({ triggerOnce: false, threshold: 0.15 });
 
   useEffect(() => {
-    let lastY = lastScrollY.current;
     const handleScroll = () => {
       lastScrollY.current = window.scrollY;
     };
@@ -48,15 +53,25 @@ export default function ScrollReveal({
     lastScrollY.current = window.scrollY;
   }, [controls, inView, delay, duration]);
 
+  const MotionTag = motion[as] || motion.div;
+
+  // If rendering an image, pass alt and src
+  const extraProps = {};
+  if (as === "img") {
+    if (alt) extraProps.alt = alt;
+    if (src) extraProps.src = src;
+  }
+
   return (
-    <motion.div
+    <MotionTag
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
       className={className}
       style={style}
+      {...extraProps}
     >
       {children}
-    </motion.div>
+    </MotionTag>
   );
 }

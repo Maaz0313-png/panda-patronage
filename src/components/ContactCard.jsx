@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollReveal from "./ScrollReveal";
 
 const ContactCard = ({
   icon,
@@ -7,7 +8,7 @@ const ContactCard = ({
   detail,
   cardClassName = "",
 }) => (
-  <div
+  <ScrollReveal
     className={`flex max-w-[340px] min-w-[260px] flex-1 flex-col rounded-[24px] border border-[#F5F6F9] bg-white p-6 shadow-sm ${cardClassName}`}
   >
     <div className="mb-4">{icon}</div>
@@ -15,7 +16,7 @@ const ContactCard = ({
     <div className="mb-4 text-sm text-gray-500">{description}</div>
     <div className="my-2 border-t border-[#F5F6F9]" />
     <div className="mt-2 text-sm break-words text-gray-900">{detail}</div>
-  </div>
+  </ScrollReveal>
 );
 
 export default ContactCard;

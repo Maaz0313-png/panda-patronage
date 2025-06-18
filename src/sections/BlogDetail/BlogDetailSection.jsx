@@ -4,6 +4,7 @@ import {
   PiTagDuotone,
   PiCalendarBlankDuotone,
 } from "react-icons/pi";
+import ScrollReveal from "../../components/ScrollReveal";
 
 export default function BlogDetailSection({ article }) {
   if (!article) return null;
@@ -11,16 +12,18 @@ export default function BlogDetailSection({ article }) {
   return (
     <section className="flex w-full flex-col items-center px-4 py-12">
       <div className="w-full max-w-3xl">
-        <a
-          href="/blog"
-          className="mb-6 flex items-center text-sm text-gray-900 font-medium"
-        >
-          <GoArrowLeft className="mr-2 inline-block" size={16} /> All articles
-        </a>
-        <h1 className="mb-4 text-4xl leading-tight font-bold text-gray-900">
-          {title}
-        </h1>
-        <div className="mb-8 flex w-fit items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
+        <ScrollReveal>
+          <a
+            href="/blog"
+            className="mb-6 flex items-center text-sm font-medium text-gray-900"
+          >
+            <GoArrowLeft className="mr-2 inline-block" size={16} /> All articles
+          </a>
+          <h1 className="mb-4 text-4xl leading-tight font-bold text-gray-900">
+            {title}
+          </h1>
+        </ScrollReveal>
+        <ScrollReveal className="mb-8 flex w-fit items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
           <img
             src={writer?.image}
             alt={writer?.name}
@@ -44,18 +47,20 @@ export default function BlogDetailSection({ article }) {
             <PiTagDuotone size={20} className="inline-block" />
             {tag}
           </span>
-        </div>
-        <img
-          src={image}
-          alt={title}
-          className="mx-auto mb-10 h-[480px] w-full max-w-[762px] rounded-[12px] object-cover"
-          style={{ aspectRatio: "762/480" }}
-        />
-        <div className="space-y-4 text-base leading-relaxed text-gray-700">
+        </ScrollReveal>
+        <ScrollReveal>
+          <img
+            src={image}
+            alt={title}
+            className="mx-auto mb-10 h-[480px] w-full max-w-[762px] rounded-[12px] object-cover"
+            style={{ aspectRatio: "762/480" }}
+          />
+        </ScrollReveal>
+        <ScrollReveal className="space-y-4 text-base leading-relaxed text-gray-700">
           {content?.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );

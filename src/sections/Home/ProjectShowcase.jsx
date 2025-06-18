@@ -35,9 +35,8 @@ const projects = [
 ];
 
 const ProjectShowcase = () => (
-  <ScrollReveal>
     <section className="bg-white px-2 py-24 md:px-0">
-      <div className="mx-auto mb-14 max-w-6xl text-center">
+      <ScrollReveal className="mx-auto mb-14 max-w-6xl text-center">
         <h2
           className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl"
           style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
@@ -48,10 +47,10 @@ const ProjectShowcase = () => (
           Discover the innovative marketing strategies that set Neutra apart,
           driving success in the digital landscape.
         </p>
-      </div>
+      </ScrollReveal>
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
         {projects.map((project, idx) => (
-          <div
+          <ScrollReveal
             key={project.title}
             className="mb-2 flex flex-col items-center rounded-2xl bg-[#f6f7fa] p-6 shadow-sm"
             style={{ minHeight: 420 }}
@@ -90,11 +89,10 @@ const ProjectShowcase = () => (
                 ))}
               </div>
             </div>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>
-  </ScrollReveal>
 );
 
 export default ProjectShowcase;

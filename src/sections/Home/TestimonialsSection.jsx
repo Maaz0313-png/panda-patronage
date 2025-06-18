@@ -44,9 +44,8 @@ const logos = [
 
 const TestimonialsSection = () => {
   return (
-    <ScrollReveal>
       <section className="flex flex-col items-center bg-white py-16">
-        <div className="mb-10 text-center">
+        <ScrollReveal className="mb-10 text-center">
           <span className="mb-3 inline-block rounded-full bg-gray-100 px-4 py-1 text-xs font-medium tracking-wide text-gray-700">
             Testimonials
           </span>
@@ -57,10 +56,10 @@ const TestimonialsSection = () => {
             Panda Patronage empowers teams with seamless Strategies and
             time-saving Solutions. Discover client success!
           </p>
-        </div>
+        </ScrollReveal>
         <div className="mb-12 flex w-full flex-wrap justify-center gap-7 md:flex-nowrap">
           {testimonials.map((t, i) => (
-            <div
+            <ScrollReveal
               className="flex max-w-[340px] min-w-[320px] flex-1 flex-col items-start gap-4 rounded-2xl px-6 py-7 shadow-md"
               style={{ background: t.bg }}
               key={i}
@@ -87,7 +86,7 @@ const TestimonialsSection = () => {
               <div className="mt-1 text-[1.08rem] leading-relaxed text-gray-800">
                 “{t.text}”
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
         <div className="relative mx-auto mt-4 h-14 w-full max-w-6xl overflow-hidden">
@@ -115,7 +114,6 @@ const TestimonialsSection = () => {
           />
         </div>
       </section>
-    </ScrollReveal>
   );
 };
 

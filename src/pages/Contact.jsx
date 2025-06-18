@@ -6,22 +6,23 @@ import {
   PiCaretDown,
 } from "react-icons/pi";
 import { ChatsIcon, MapPinIcon } from "@phosphor-icons/react";
+import ScrollReveal from "../components/ScrollReveal";
 
 const Contact = () => {
   return (
     <div className="flex min-h-screen w-full flex-col items-center bg-white px-2 py-12">
       {/* Header Section */}
       <div className="mb-10 flex flex-col items-center">
-        <span className="mb-4 rounded-full bg-[#F5F6F9] px-4 py-1 text-xs tracking-widest text-gray-500">
+        <ScrollReveal as="span" className="mb-4 rounded-full bg-[#F5F6F9] px-4 py-1 text-xs tracking-widest text-gray-500">
           NEUTRA CONTACT
-        </span>
-        <h1 className="mb-4 text-center text-4xl font-bold text-gray-900 md:text-5xl">
+        </ScrollReveal>
+        <ScrollReveal as="h1" className="mb-4 text-center text-4xl font-bold text-gray-900 md:text-5xl">
           Get in touch with us today!
-        </h1>
-        <p className="max-w-xl text-center text-gray-500">
+        </ScrollReveal>
+        <ScrollReveal as="p" className="max-w-xl text-center text-gray-500">
           Contact our sales and support teams for demos, onboarding assistance,
           or any product inquiries.
-        </p>
+        </ScrollReveal>
       </div>
       {/* Contact Cards Section */}
       <div className="mb-12 flex w-full max-w-5xl flex-col gap-6 md:flex-row">
@@ -52,7 +53,7 @@ const Contact = () => {
         />
       </div>
       {/* Contact Form Section */}
-      <div className="flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm md:flex-row">
+      <ScrollReveal className="flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm md:flex-row">
         {/* Left Info */}
         <div className="mb-6 flex flex-1 flex-col md:mb-0">
           <div className="mb-3 flex items-center">
@@ -129,7 +130,7 @@ const Contact = () => {
             Submit
           </button>
         </form>
-      </div>
+      </ScrollReveal>
     </div>
   );
 };

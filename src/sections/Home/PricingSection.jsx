@@ -53,19 +53,18 @@ const plans = [
 ];
 
 const PricingSection = () => (
-  <ScrollReveal>
     <section className="flex w-full flex-col items-center bg-[#f7f7f9] py-20">
-      <div className="mb-12 text-center">
+      <ScrollReveal className="mb-12 text-center">
         <span className="mb-3 inline-block rounded-full bg-white px-4 py-1 text-xs font-medium tracking-wide text-gray-900">
           Simple Pricing
         </span>
         <h2 className="mb-2 text-3xl font-bold md:text-4xl">
           Unlock Your Growth
         </h2>
-      </div>
+      </ScrollReveal>
       <div className="flex w-full max-w-5xl flex-col justify-center gap-7 md:flex-row">
         {plans.map((plan, idx) => (
-          <div
+          <ScrollReveal
             key={plan.name}
             className={`flex max-w-[370px] min-w-[290px] flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
               plan.highlight
@@ -128,11 +127,10 @@ const PricingSection = () => (
             >
               {plan.button.text}
             </button>
-          </div>
+          </ScrollReveal>
         ))}
       </div>
     </section>
-  </ScrollReveal>
 );
 
 export default PricingSection;

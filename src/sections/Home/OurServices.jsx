@@ -57,7 +57,6 @@ const services = [
 ];
 
 const OurServices = () => (
-  <ScrollReveal>
     <section className="flex items-center justify-center bg-[#f6f7fa] py-16">
       <div
         className="relative mx-auto w-full overflow-hidden md:w-[1232px]"
@@ -93,7 +92,7 @@ const OurServices = () => (
           {/* Cards grid */}
           <div className="flex h-[584px] w-full flex-row flex-nowrap gap-4">
             {/* Card 1: Branding */}
-            <div className="flex flex-[66.447%] flex-col rounded-[9px] bg-white/90 p-6 shadow-md md:h-[93.838%]">
+            <ScrollReveal className="flex flex-[66.447%] flex-col rounded-[9px] bg-white/90 p-6 shadow-md md:h-[93.838%]">
               <img
                 src={services[0].img}
                 alt="Branding"
@@ -113,10 +112,10 @@ const OurServices = () => (
                   <img src={framerLogo} alt="" />
                 </span>
               </div>
-            </div>
+            </ScrollReveal>
             <div className="flex h-[548px] flex-col justify-between">
               {/* Card 2: Social Media Management (row 1, col 2) */}
-              <div className="flex min-h-[210px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
+              <ScrollReveal className="flex min-h-[210px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
                   {services[1].title}
                 </h3>
@@ -131,9 +130,9 @@ const OurServices = () => (
                     />
                   ))}
                 </div>
-              </div>
+              </ScrollReveal>
               {/* Card 3: Meta Advertisement (row 2, col 2) */}
-              <div className="flex md:h-[322px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex md:h-[322px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[3].img}
                   alt="Meta Advertisement"
@@ -143,11 +142,11 @@ const OurServices = () => (
                   {services[3].title}
                 </h3>
                 <p className="mb-4 text-sm text-gray-700">{services[3].desc}</p>
-              </div>
+              </ScrollReveal>
             </div>
             <div className="flex h-[548px] flex-col justify-between">
               {/* Card 4: Graphic Designing */}
-              <div className="flex md:h-[342px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex md:h-[342px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[2].img}
                   alt="Graphic Designing"
@@ -157,10 +156,10 @@ const OurServices = () => (
                   {services[2].title}
                 </h3>
                 <p className="mb-4 text-sm text-gray-700">{services[2].desc}</p>
-              </div>
+              </ScrollReveal>
 
               {/* Card 5: Web Development (row 2, col 3) */}
-              <div className="flex md:h-[190px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex md:h-[190px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
                   {services[4].title}
                 </h3>
@@ -172,13 +171,12 @@ const OurServices = () => (
                     className="w-[44px] rounded-full bg-yellow-300 p-1"
                   />
                 </div>
-              </div>
+              </ScrollReveal>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </ScrollReveal>
 );
 
 export default OurServices;

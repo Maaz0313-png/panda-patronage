@@ -5,17 +5,16 @@ import articles from "../../data/articles";
 
 const DiscoverSection = () => {
   return (
-    <ScrollReveal
-      as="section"
-      className="font-roboto mx-auto w-full max-w-[1200px] px-4 pt-16"
-    >
-      <h2 className="mb-12 text-center text-[40px] leading-[56px] font-bold text-gray-900">
-        Discover articles and
-        <br />
-        tutorials to help you build
-        <br />
-        better.
-      </h2>
+    <section className="font-roboto mx-auto w-full max-w-[1200px] px-4 pt-16">
+      <ScrollReveal>
+        <h2 className="mb-12 text-center text-[40px] leading-[56px] font-bold text-gray-900">
+          Discover articles and
+          <br />
+          tutorials to help you build
+          <br />
+          better.
+        </h2>
+      </ScrollReveal>
       <div className="flex flex-wrap justify-center gap-8">
         {articles.slice(1, 3).map((article, idx) => (
           <ScrollReveal
@@ -30,7 +29,7 @@ const DiscoverSection = () => {
           </ScrollReveal>
         ))}
       </div>
-    </ScrollReveal>
+    </section>
   );
 };
 
