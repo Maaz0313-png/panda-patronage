@@ -62,11 +62,11 @@ const PricingSection = () => (
           Unlock Your Growth
         </h2>
       </ScrollReveal>
-      <div className="flex w-full max-w-5xl flex-col justify-center gap-7 md:flex-row">
+      <div className="flex w-full max-w-5xl flex-col justify-center gap-7 lg:flex-row">
         {plans.map((plan, idx) => (
           <ScrollReveal
             key={plan.name}
-            className={`flex max-w-[370px] min-w-[290px] flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
+            className={`flex max-w-[370px] min-w-[290px] mx-auto lg:mx-0 flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
               plan.highlight
                 ? "relative overflow-hidden bg-gradient-to-tl from-black to-orange-900 text-white"
                 : "bg-white text-black"

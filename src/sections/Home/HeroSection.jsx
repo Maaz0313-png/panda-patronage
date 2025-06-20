@@ -65,7 +65,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/0ywVpxGO9e9t2ww1smSTEWqHPs.png"
               alt="Panda"
-              className="absolute right-1 -bottom-23 z-10 hidden cursor-grab rounded-br-3xl rounded-bl-3xl lg:block lg:h-[515px] lg:w-[601px]"
+              className="absolute right-1 -bottom-23 z-10 hidden opacity-0 lg:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl lg:block lg:h-[515px] lg:w-[601px]"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

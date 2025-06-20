@@ -1,4 +1,5 @@
 import DesktopHeader from "./components/DesktopHeader";
+import MobileHeader from "./components/MobileHeader";
 import Footer from "./components/Footer";
 import { Outlet, useLocation } from "react-router-dom";
 
@@ -22,6 +23,7 @@ const Layout = () => {
   return (
     <div className="relative">
       <DesktopHeader activeLink={activeLink} />
+      <MobileHeader activeLink={activeLink} />
       <Outlet />
       <Footer />
     </div>

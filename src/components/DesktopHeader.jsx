@@ -35,12 +35,12 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
 
   return (
     <header
-      className={`overflow-x-hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+      className={`hidden overflow-x-hidden lg:block ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
     >
       <motion.div
         layout
         transition={{ type: "spring", stiffness: 150, damping: 40 }}
-        className={`flex items-center ${
+        className={` items-center flex ${
           scrolled
             ? "mx-auto mt-3 h-[58px] w-[529px] gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
             : "h-[84px] w-full justify-between bg-[rgb(245,246,249)] px-[152px] py-0"

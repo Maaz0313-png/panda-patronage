@@ -17,7 +17,7 @@ const WhatSetsUsApart = () => (
           your fulfillment
         </p>
       </ScrollReveal>
-      <div className="mx-auto grid w-fit grid-cols-1 gap-4 md:grid-cols-3">
+      <div className="mx-auto grid w-fit grid-cols-1 gap-4 lg:grid-cols-3">
         {/* Card 1 */}
         <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left md:h-[260px] md:w-[373.328px]">
           <PiRocketDuotone className="mb-4" size={48} />
