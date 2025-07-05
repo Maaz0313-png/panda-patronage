@@ -29,22 +29,22 @@ const faqs = [
 
 const FaqsSection = () => (
   <ScrollReveal>
-    <section className="flex w-full flex-col items-center bg-[#f7f7f9] py-20">
+    <section className="flex w-full flex-col items-center bg-[#f7f7f9] py-16 px-4 tablet:px-6">
       <div className="mb-10 text-center">
-        <h2 className="mb-2 text-3xl font-bold md:text-4xl">FAQs</h2>
+        <h2 className="mb-2 text-2xl font-bold tablet:text-4xl">FAQs</h2>
         <p className="mx-auto max-w-2xl text-base text-gray-500">
           To make things easier, we've compiled a list of frequently asked
           questions to address your concerns.
         </p>
       </div>
-      <div className="grid w-full max-w-6xl grid-cols-1 gap-x-10 gap-y-8 md:grid-cols-3">
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-x-6 gap-y-6 tablet:gap-x-10 tablet:gap-y-8 tablet:grid-cols-3">
         {faqs.map((faq, i) => (
           <ScrollReveal key={i} delay={i * 0.05}>
-            <div className="text-left">
-              <div className="mb-1 text-lg font-semibold text-gray-900">
+            <div className="text-left bg-white rounded-xl p-5 shadow-sm h-full">
+              <div className="mb-1 text-base tablet:text-lg font-semibold text-gray-900">
                 {faq.q}
               </div>
-              <div className="text-base leading-relaxed text-gray-500">
+              <div className="text-sm tablet:text-base leading-relaxed text-gray-500">
                 {faq.a}
               </div>
             </div>

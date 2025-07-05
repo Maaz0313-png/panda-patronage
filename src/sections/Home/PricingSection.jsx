@@ -58,15 +58,15 @@ const PricingSection = () => (
         <span className="mb-3 inline-block rounded-full bg-white px-4 py-1 text-xs font-medium tracking-wide text-gray-900">
           Simple Pricing
         </span>
-        <h2 className="mb-2 text-3xl font-bold md:text-4xl">
+        <h2 className="mb-2 text-3xl font-bold tablet:text-4xl">
           Unlock Your Growth
         </h2>
       </ScrollReveal>
-      <div className="flex w-full max-w-5xl flex-col justify-center gap-7 lg:flex-row">
+      <div className="flex w-full max-w-5xl flex-col justify-center gap-7 desktop:flex-row">
         {plans.map((plan, idx) => (
           <ScrollReveal
             key={plan.name}
-            className={`flex max-w-[370px] min-w-[290px] mx-auto lg:mx-0 flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
+            className={`flex max-w-[370px] min-w-[290px] mx-auto desktop:mx-0 flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
               plan.highlight
                 ? "relative overflow-hidden bg-gradient-to-tl from-black to-orange-900 text-white"
                 : "bg-white text-black"
@@ -106,7 +106,7 @@ const PricingSection = () => (
             </ul>
             <div className="mt-auto">
               <span
-                className={`block text-3xl font-bold md:text-4xl ${
+                className={`block text-3xl font-bold tablet:text-4xl ${
                   plan.highlight ? "text-white" : "text-black"
                 }`}
               >

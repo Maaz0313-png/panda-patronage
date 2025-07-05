@@ -8,22 +8,22 @@ const ImpactStatement = () => (
       <img
         src="https://framerusercontent.com/images/Gy6oyLvyryjSizdl2va3wLbiYjc.png?scale-down-to=512"
         alt="Star Object"
-        className="absolute top-1/2 left-10 h-16 w-16 -translate-y-1/2 md:h-16 md:w-16"
-        style={{ minWidth: 64, minHeight: 64 }}
+        className="absolute top-1/5 left-0 tablet:top-1/2 tablet:left-10 size-14 tablet:-translate-y-1/2 tablet:size-16"
       />
       {/* Spring object right */}
       <img
         src="https://framerusercontent.com/images/nVwfJfYTJH4GZwm9UXcHF6NVsr4.png?scale-down-to=512"
         alt="Spring Object"
-        className="absolute top-0 right-16 h-24 w-24 md:h-24 md:w-24"
+        className="absolute hidden tablet:block top-0 right-16 h-24 w-24 tablet:h-24 tablet:w-24"
         style={{ minWidth: 96, minHeight: 96 }}
       />
       <div className="flex w-full flex-1 items-center justify-center">
         <h2
-          className="max-w-3xl text-center text-3xl leading-snug font-normal text-gray-900 md:text-4xl"
+          className="max-w-3xl text-center mx-4 tablet:mx-0 text-3xl leading-snug font-normal text-gray-900 tablet:text-4xl"
         >
-          We have been creating projects that remain
-          <br className="hidden md:block" /> relevant today, tomorrow, and for
+          We have been <br className="inline tablet:hidden" /> creating projects that remain
+          <br className="hidden tablet:inline" /> relevant today, tomorrow, and for
+          <br className="inline tablet:hidden" />
           decades to come
         </h2>
       </div>

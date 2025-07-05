@@ -10,14 +10,13 @@ const HeroSection = () => {
     <ScrollReveal>
       <section className="flex min-h-[600px] items-center justify-center bg-[#f6f7fa] py-12">
         <div
-          className="[background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] relative mx-auto grid w-full max-w-[1195px] grid-cols-1 items-center rounded-3xl px-10 py-14 shadow-lg md:grid-cols-2 md:px-16 md:py-20"
+          className="[background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] relative mx-auto grid w-full max-w-[1195px] grid-cols-1 items-center rounded-3xl px-10 py-14 shadow-lg tablet:grid-cols-2 tablet:px-16 tablet:py-20"
           style={{ minHeight: 480 }}
         >
           {/* Left: Text */}
-          <div className="z-10 flex flex-col justify-center">
+          <div className="flex flex-col justify-center flex-3/4">
             <h1
-              className="mb-8 text-5xl leading-tight font-light text-white md:text-6xl"
-              style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
+              className="mb-8 text-5xl w-full leading-tight font-light text-white tablet:text-6xl max-w-[640px]"
             >
               We&apos;re Creative
               <br />
@@ -60,12 +59,21 @@ const HeroSection = () => {
             </button>
           </div>
           {/* Right: Panda and shapes */}
-          <div className="relative mt-10 flex min-h-[370px] items-center justify-center md:mt-0 lg:w-[601px]">
+          <div className="relative mt-10 flex min-h-[370px] items-center justify-center tablet:mt-0 desktop:w-[601px]">
             {/* Panda image */}
             <motion.img
               src="https://framerusercontent.com/images/0ywVpxGO9e9t2ww1smSTEWqHPs.png"
-              alt="Panda"
-              className="absolute right-1 -bottom-23 z-10 hidden opacity-0 lg:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl lg:block lg:h-[515px] lg:w-[601px]"
+              alt="Panda with headphones"
+              className="absolute right-1 -bottom-23 z-10 hidden opacity-0 desktop:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl desktop:block desktop:h-[515px] desktop:w-[601px]"
+              drag={true}
+              dragElastic={1}
+              dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+            />
+            {/* Baby Panda image */}
+            <motion.img
+              src="https://framerusercontent.com/images/vvZ0ahKCEDuFTVnLLJJ3ZRHUD9M.png"
+              alt="Baby Panda with headphones"
+              className="absolute right-1 bottom-23 z-10 hidden opacity-0 tablet:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl tablet:block desktop:hidden h-[336px] w-[258px]"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -74,7 +82,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/LFAxsa4CpX7e4qBI72ijOV2sHg.png"
               alt="Left shape"
-              className="absolute bottom-[-10px] left-[-40px] z-20 w-[217px] cursor-grab md:-bottom-40 md:left-[-60px] md:h-[209.625px] md:w-[217px]"
+              className="absolute tablet:hidden desktop:block bottom-[-10px] left-[-40px] z-20 w-[217px] cursor-grab tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px]"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -92,7 +100,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/Tq3lgO9Qy66CFuDaYW99KQ5xoLM.png?scale-down-to=512"
               alt="Right shape"
-              className="absolute right-[-40px] bottom-[-10px] z-20 size-[130px] cursor-grab md:right-[0px] md:bottom-10"
+              className="absolute desktop:right-[-40px] right-[-40px] desktop:bottom-[-10px] bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] z-20 size-[130px] tablet:size-[180px] cursor-grab"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

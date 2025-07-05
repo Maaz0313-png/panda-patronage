@@ -16,7 +16,7 @@ const Contact = () => {
         <ScrollReveal as="span" className="mb-4 rounded-full bg-[#F5F6F9] px-4 py-1 text-xs tracking-widest text-gray-500">
           NEUTRA CONTACT
         </ScrollReveal>
-        <ScrollReveal as="h1" className="mb-4 text-center text-4xl font-bold text-gray-900 md:text-5xl">
+        <ScrollReveal as="h1" className="mb-4 text-center text-4xl font-bold text-gray-900 tablet:text-5xl">
           Get in touch with us today!
         </ScrollReveal>
         <ScrollReveal as="p" className="max-w-xl text-center text-gray-500">
@@ -25,7 +25,7 @@ const Contact = () => {
         </ScrollReveal>
       </div>
       {/* Contact Cards Section */}
-      <div className="mb-12 flex w-full max-w-5xl flex-col gap-6 md:flex-row">
+      <div className="mb-12 flex w-full max-w-5xl flex-col gap-6 tablet:flex-row">
         <ContactCard
           icon={
             <ChatsIcon size={32} weight="duotone" className="text-gray-900" />
@@ -53,9 +53,9 @@ const Contact = () => {
         />
       </div>
       {/* Contact Form Section */}
-      <ScrollReveal className="flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm md:flex-row">
+      <ScrollReveal className="flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm tablet:flex-row">
         {/* Left Info */}
-        <div className="mb-6 flex flex-1 flex-col md:mb-0">
+        <div className="mb-6 flex flex-1 flex-col tablet:mb-0">
           <div className="mb-3 flex items-center">
             <PiRocketDuotone size={32} className="mr-3 text-gray-900" />
           </div>

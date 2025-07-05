@@ -88,7 +88,7 @@ const TeamSection = () => (
           Discover the talented individuals who bring Neutra to life, each
           dedicated to pushing the boundaries of digital design.
         </ScrollReveal>
-        <div className="grid grid-cols-1 justify-items-center gap-20 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid justify-items-center gap-20 grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-4">
           {teamMembers.map((member) => (
             <ScrollReveal key={member.name} className="flex w-[276px] flex-col">
               <img

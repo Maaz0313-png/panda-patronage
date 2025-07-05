@@ -7,7 +7,7 @@ const WhatSetsUsApart = () => (
     <div className="mx-auto w-full px-4 text-center">
       <ScrollReveal>
         <h2
-          className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl"
+          className="mb-4 text-4xl font-bold text-gray-900 tablet:text-5xl"
           style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
         >
           Explore What Sets Us Apart
@@ -17,9 +17,9 @@ const WhatSetsUsApart = () => (
           your fulfillment
         </p>
       </ScrollReveal>
-      <div className="mx-auto grid w-fit grid-cols-1 gap-4 lg:grid-cols-3">
+      <div className="mx-auto grid w-fit grid-cols-1 gap-4 desktop:grid-cols-3">
         {/* Card 1 */}
-        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left md:h-[260px] md:w-[373.328px]">
+        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left tablet:h-[260px] tablet:w-[373.328px]">
           <PiRocketDuotone className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Planning Phase
@@ -30,7 +30,7 @@ const WhatSetsUsApart = () => (
           </p>
         </ScrollReveal>
         {/* Card 2 */}
-        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left md:h-[260px] md:w-[373.328px]">
+        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left tablet:h-[260px] tablet:w-[373.328px]">
           <UsersThreeIcon weight="duotone" className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Strategy Blueprint
@@ -41,7 +41,7 @@ const WhatSetsUsApart = () => (
           </p>
         </ScrollReveal>
         {/* Card 3 */}
-        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left md:h-[260px] md:w-[373.328px]">
+        <ScrollReveal className="flex flex-col items-start rounded-3xl bg-white p-8 text-left tablet:h-[260px] tablet:w-[373.328px]">
           <PiGearDuotone className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Working Process

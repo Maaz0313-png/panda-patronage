@@ -67,7 +67,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
         </motion.div>
       )}
       <header
-        className={`block overflow-x-hidden lg:hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+        className={`block overflow-x-hidden desktop:hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
       >
         <motion.div
           layout

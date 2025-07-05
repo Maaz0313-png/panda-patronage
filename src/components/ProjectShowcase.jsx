@@ -50,8 +50,8 @@ const CaseCard = ({ title, img, tags, url }) => (
 );
 
 const ProjectShowcase = ({ cases }) => (
-  <section className="bg-white px-2 pb-24 md:px-0">
-    <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+  <section className="bg-white px-2 pb-24 tablet:px-0">
+    <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 tablet:grid-cols-2">
       {cases.map((item) => (
         <CaseCard key={item.title} {...item} />
       ))}

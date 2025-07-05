@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
           <span className="mb-3 inline-block rounded-full bg-gray-100 px-4 py-1 text-xs font-medium tracking-wide text-gray-700">
             Testimonials
           </span>
-          <h2 className="mb-2 text-3xl font-bold md:text-4xl">
+          <h2 className="mb-2 text-3xl font-bold tablet:text-4xl">
             Our satisfied customers
           </h2>
           <p className="mx-auto max-w-xl text-base text-gray-500">
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
             time-saving Solutions. Discover client success!
           </p>
         </ScrollReveal>
-        <div className="mb-12 flex w-full flex-wrap justify-center gap-7 md:flex-nowrap">
+        <div className="mb-12 flex w-full flex-wrap justify-center gap-7 tablet:flex-nowrap">
           {testimonials.map((t, i) => (
             <ScrollReveal
               className="flex max-w-[340px] min-w-[320px] flex-1 flex-col items-start gap-4 rounded-2xl px-6 py-7 shadow-md"
@@ -118,13 +118,3 @@ const TestimonialsSection = () => {
 };
 
 export default TestimonialsSection;
-
-<style>{`
-        @keyframes logo-slider {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        .animate-logo-slider {
-          animation: logo-slider 5s linear infinite;
-        }
-      `}</style>;

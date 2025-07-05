@@ -35,7 +35,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
 
   return (
     <header
-      className={`hidden overflow-x-hidden lg:block ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+      className={`hidden overflow-x-hidden desktop:block ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
     >
       <motion.div
         layout

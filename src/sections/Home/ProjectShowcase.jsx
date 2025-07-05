@@ -35,10 +35,10 @@ const projects = [
 ];
 
 const ProjectShowcase = () => (
-    <section className="bg-white px-2 py-24 md:px-0">
+    <section className="bg-white px-2 py-24 tablet:px-0">
       <ScrollReveal className="mx-auto mb-14 max-w-6xl text-center">
         <h2
-          className="mb-4 text-4xl font-bold text-gray-900 md:text-5xl"
+          className="mb-4 text-4xl font-bold text-gray-900 tablet:text-5xl"
           style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
         >
           Building Digital Excellence with Panda.
@@ -48,7 +48,7 @@ const ProjectShowcase = () => (
           driving success in the digital landscape.
         </p>
       </ScrollReveal>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 tablet:grid-cols-2">
         {projects.map((project, idx) => (
           <ScrollReveal
             key={project.title}

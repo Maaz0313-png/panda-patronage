@@ -8,10 +8,13 @@ const services = [
     img: "https://framerusercontent.com/images/SrW1Ux5MtGYoPFNopWE6a1C0.jpg",
     icons: [
       {
-        src: "https://framerusercontent.com/images/VSHgnszILd4LCOoi9D5kfP1f78.webp",
-        alt: "JS Logo",
+        src: "https://framerusercontent.com/images/Fp09fc507ocX7P8MZ47tH3es9ig.png",
+        alt: "Adobe Illustrator Logo",
       },
-      { type: "framer" },
+      {
+        src: "https://framerusercontent.com/images/7GWO4ayVlkwffxwuedUuwm8fkz0.png",
+        alt: "Adobe Photoshop Logo",
+      },
     ],
   },
   {
@@ -19,16 +22,16 @@ const services = [
     desc: "Your audience resides on social media, and we ensure your presence there! Our social media management services maintain your profiles.",
     icons: [
       {
-        src: "https://framerusercontent.com/images/VSHgnszILd4LCOoi9D5kfP1f78.webp",
-        alt: "JS Logo",
+        src: "https://framerusercontent.com/images/so6zz1hYgNsUyUiichSAyeLN6mk.png",
+        alt: "LinkedIn Logo",
       },
       {
-        src: "https://framerusercontent.com/images/VSHgnszILd4LCOoi9D5kfP1f78.webp",
-        alt: "JS Logo",
+        src: "https://framerusercontent.com/images/FXrLgI4mV4BrYpx766r3SKJsk.png",
+        alt: "Facebook Logo",
       },
       {
-        src: "https://framerusercontent.com/images/VSHgnszILd4LCOoi9D5kfP1f78.webp",
-        alt: "JS Logo",
+        src: "https://framerusercontent.com/images/CW3W7FdNyoeDoTg3cqbFxT8Rg.png",
+        alt: "Instagram Logo",
       },
     ],
   },
@@ -36,31 +39,44 @@ const services = [
     title: "Graphic Designing",
     desc: "Our visual design solutions generate powerful imagery, from logos to promotional resources, that deliver your message effectively.",
     img: "https://framerusercontent.com/images/2fagzZknRmiCRjgb6dyGnm6x8I.png?scale-down-to=512",
-    icons: [],
   },
   {
     title: "Meta Advertisement",
     desc: "Target the right audience and maximize ROI with our Meta ad campaigns on FB and Instagram.",
     img: "https://framerusercontent.com/images/dNFE2DKe1j69lloc68x5v3NJCEk.png",
-    icons: [],
   },
   {
     title: "Web Development",
     desc: "Your website is your digital storefront—we’re designed to captivate, engage, and drive traffic.",
     icons: [
       {
-        src: "https://framerusercontent.com/images/VSHgnszILd4LCOoi9D5kfP1f78.webp",
-        alt: "JS Logo",
+        src: "https://framerusercontent.com/images/X7wo3DMwzedPcHDgbHtDISpsE.png",
+        alt: "Laravel Logo",
+      },
+      {
+        src: "https://framerusercontent.com/images/kXOpgXYfialgKihFqYASFYooY.png",
+        alt: "Bootstrap Logo",
+      },
+      {
+        src: "https://framerusercontent.com/images/20SUxAcst6wjv4rMWpsfLwgYAk.png",
+        alt: "Tailwind CSS Logo",
+      },
+      {
+        src: "https://framerusercontent.com/images/6OWebZwFmSe4y1SoII0ZJsV7wQs.png",
+        alt: "React Logo",
+      },
+      {
+        src: "https://framerusercontent.com/images/1wtdsMCt2bJYIDiInF1vo83I.png",
+        alt: "PHP Logo",
       },
     ],
   },
 ];
 
 const OurServices = () => (
-    <section className="flex items-center justify-center bg-[#f6f7fa] py-16">
+    <section className="flex items-center justify-center bg-[#f6f7fa] tablet:py-16">
       <div
-        className="relative mx-auto w-full overflow-hidden md:w-[1232px]"
-        style={{ height: 872 }}
+        className="relative mx-auto w-full overflow-hidden desktop:w-[1232px] desktop:h-[872px]"
       >
         {/* BG image overlay */}
         <img
@@ -69,30 +85,30 @@ const OurServices = () => (
           className="absolute inset-0 z-0 h-full w-full object-cover object-[center_center]"
           style={{ filter: "brightness(0.55)" }}
         />
-        <div className="relative z-10 px-6 py-10 md:px-12">
-          <div className="mb-10 flex flex-col md:flex-row md:items-center md:justify-between">
+        <div className="relative z-10 px-6 py-10 tablet:px-12">
+          <div className="mb-10 flex flex-col tablet:flex-row tablet:items-center tablet:justify-between">
             <div>
               <span className="mb-4 inline-block rounded-full bg-white/90 px-5 py-1 text-sm font-medium text-gray-900">
                 Our services
               </span>
               <h2
-                className="mb-2 text-3xl leading-tight font-semibold text-white md:text-4xl"
+                className="mb-2 text-3xl leading-tight font-semibold text-white tablet:text-4xl"
                 style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
               >
                 Professional Services That Showcase
-                <br className="hidden md:block" />
+                <br className="hidden tablet:block" />
                 Our Expertise.
               </h2>
             </div>
-            <p className="mt-4 max-w-md text-base text-white/90 md:mt-0 md:text-left">
+            <p className="mt-4 max-w-md text-base text-white/90 tablet:mt-0 tablet:text-left">
               From creative design to technical solutions, our services define
               industry excellence.
             </p>
           </div>
           {/* Cards grid */}
-          <div className="flex h-[584px] w-full flex-row flex-nowrap gap-4">
+          <div className="flex h-fit desktop:h-[584px] w-full desktop:flex-row flex-col flex-nowrap gap-4">
             {/* Card 1: Branding */}
-            <ScrollReveal className="flex flex-[66.447%] flex-col rounded-[9px] bg-white/90 p-6 shadow-md md:h-[93.838%]">
+            <ScrollReveal className="flex desktop:flex-[66.447%] flex-col rounded-[9px] bg-white/90 p-6 shadow-md desktop:h-[93.838%]">
               <img
                 src={services[0].img}
                 alt="Branding"
@@ -103,19 +119,19 @@ const OurServices = () => (
               </h3>
               <p className="mb-4 text-sm text-gray-700">{services[0].desc}</p>
               <div className="mt-auto flex items-center gap-2">
-                <img
-                  src={services[0].icons[0].src}
-                  alt={services[0].icons[0].alt}
-                  className="w-[44px] rounded-full bg-yellow-300 p-1"
-                />
-                <span className="flex w-[44px] items-center justify-center rounded-full border border-gray-200 bg-black">
-                  <img src={framerLogo} alt="" />
-                </span>
+              {services[0].icons.map((icon, i) => (
+                    <img
+                      key={i}
+                      src={icon.src}
+                      alt={icon.alt}
+                      className={`-ml-5 w-[44px] rounded-full bg-white p-[2px] z-[1${i}]`}
+                    />
+                  ))}
               </div>
             </ScrollReveal>
-            <div className="flex h-[548px] flex-col justify-between">
+            <div className="flex tablet:h-[548px] flex-col justify-between tablet:gap-0 gap-4">
               {/* Card 2: Social Media Management (row 1, col 2) */}
-              <ScrollReveal className="flex min-h-[210px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
+              <ScrollReveal className="flex min-h-[210px] w-full desktop:w-[353.84px] flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
                   {services[1].title}
                 </h3>
@@ -126,13 +142,13 @@ const OurServices = () => (
                       key={i}
                       src={icon.src}
                       alt={icon.alt}
-                      className="-ml-5 w-[44px] rounded-full bg-yellow-300 p-1"
+                      className={`-ml-5 w-[44px] rounded-full bg-white p-[2px] z-[1${i}]`}
                     />
                   ))}
                 </div>
               </ScrollReveal>
               {/* Card 3: Meta Advertisement (row 2, col 2) */}
-              <ScrollReveal className="flex md:h-[322px] w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex tablet:h-[322px] w-full desktop:w-[353.84px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[3].img}
                   alt="Meta Advertisement"
@@ -144,9 +160,9 @@ const OurServices = () => (
                 <p className="mb-4 text-sm text-gray-700">{services[3].desc}</p>
               </ScrollReveal>
             </div>
-            <div className="flex h-[548px] flex-col justify-between">
+            <div className="flex tablet:h-[548px] flex-col justify-between tablet:gap-0 gap-4">
               {/* Card 4: Graphic Designing */}
-              <ScrollReveal className="flex md:h-[342px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex tablet:h-[342px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <img
                   src={services[2].img}
                   alt="Graphic Designing"
@@ -159,17 +175,20 @@ const OurServices = () => (
               </ScrollReveal>
 
               {/* Card 5: Web Development (row 2, col 3) */}
-              <ScrollReveal className="flex md:h-[190px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
+              <ScrollReveal className="flex tablet:h-[190px] flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
                 <h3 className="mb-1 text-lg font-semibold text-gray-900">
                   {services[4].title}
                 </h3>
                 <p className="mb-4 text-sm text-gray-700">{services[4].desc}</p>
-                <div className="mt-auto flex items-center gap-2">
-                  <img
-                    src={services[4].icons[0].src}
-                    alt={services[4].icons[0].alt}
-                    className="w-[44px] rounded-full bg-yellow-300 p-1"
-                  />
+                <div className="mt-auto pl-4 flex items-center gap-2">
+                {services[4].icons.map((icon, i) => (
+                    <img
+                      key={i}
+                      src={icon.src}
+                      alt={icon.alt}
+                      className={`-ml-5 w-[44px] rounded-full bg-white p-[2px] z-[1${i}]`}
+                    />
+                  ))}
                 </div>
               </ScrollReveal>
             </div>

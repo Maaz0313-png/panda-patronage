@@ -6,7 +6,7 @@ const NotFound = () => {
       <span className="mb-4 rounded-full bg-white px-4 border border-gray-300 py-2 text-sm font-medium text-black">
         404 error
       </span>
-      <h1 className="mb-2 text-center text-3xl font-bold text-gray-900 md:text-4xl">
+      <h1 className="mb-2 text-center text-3xl font-bold text-gray-900 tablet:text-4xl">
         Page not found
       </h1>
       <p className="mb-8 max-w-md text-center text-gray-500">

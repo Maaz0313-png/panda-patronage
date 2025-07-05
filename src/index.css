@@ -1,9 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 50.625rem; /* 810px */
+  --breakpoint-desktop: 80rem; /* 1280px */
+}
 
 body {
   font-family: "Roboto", sans-serif;
 }
 @utility font-greatvibes {
   font-family: "Great Vibes", cursive;
+}
+@keyframes logo-slider {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-logo-slider {
+  animation: logo-slider 18s linear infinite;
+  width: max-content;
+  display: flex;
+}
+.animate-logo-slider:hover {
+  animation-play-state: paused;
 }

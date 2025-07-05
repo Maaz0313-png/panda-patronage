@@ -8,9 +8,9 @@ import ScrollReveal from "./ScrollReveal";
 
 const Footer = () => {
   return (
-      <ScrollReveal className="flex flex-col justify-between m-4 h-[396px] rounded-2xl bg-[#191919] px-6 pt-10 font-sans text-white">
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 pb-8 md:grid-cols-3">
-          <div className="flex flex-col justify-between md:col-span-1">
+      <ScrollReveal className="flex flex-col justify-between m-4 rounded-2xl bg-gradient-to-tl from-black to-orange-900 px-4 py-10 tablet:px-6 font-sans text-white">
+        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 pb-8 tablet:grid-cols-3">
+          <div className="flex flex-col justify-between tablet:col-span-1">
             <img
               src="https://framerusercontent.com/images/SbtkRyLYOLa1pNM5Vb7domSNKU.png?scale-down-to=512"
               alt="Logo"
@@ -21,7 +21,7 @@ const Footer = () => {
               effectively reach and engage customers and target audiences.
             </p>
           </div>
-          <div className="flex flex-row justify-end gap-20 md:col-span-2">
+          <div className="grid grid-cols-2 gap-8 tablet:flex tablet:flex-row tablet:justify-end tablet:gap-20 tablet:col-span-2">
             <div>
               <h3 className="mb-3 text-base font-semibold text-gray-300">
                 Company
@@ -87,7 +87,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-auto w-full">
-          <div className="mx-auto flex max-w-6xl flex-row items-center justify-between border-t border-gray-800 px-2 py-4">
+          <div className="flex flex-col tablet:flex-row items-start gap-8 desktop:gap-0 desktop:justify-between justify-center border-t border-gray-800 px-2 py-4">
             <p className="text-sm text-gray-500">© Panda-Patronage 2025</p>
             <div className="flex space-x-4">
               <a
