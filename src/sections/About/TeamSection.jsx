@@ -80,7 +80,7 @@ const teamMembers = [
 
 const TeamSection = () => (
   <section className="bg-transparent py-20">
-    <div className="w-full max-w-6xl px-6">
+    <div className="w-full max-w-7xl px-6">
       <ScrollReveal
         as="h2"
         className="tablet:text-5xl tablet:font-bold mb-4 w-full text-center text-4xl leading-11 font-normal [word-break:break-word]"
@@ -94,13 +94,13 @@ const TeamSection = () => (
         Discover the talented individuals who bring Neutra to life, each
         dedicated to pushing the boundaries of digital design.
       </ScrollReveal>
-      <div className="tablet:grid-cols-3 desktop:grid-cols-4 grid grid-cols-2 justify-items-center gap-20">
+      <div className="tablet:grid-cols-3 desktop:grid-cols-4 grid grid-cols-2 justify-items-center [column-gap:16px] [row-gap:32px]">
         {teamMembers.map((member) => (
           <ScrollReveal
             key={member.name}
             className="flex w-full max-w-[276px] flex-col items-start"
           >
-            <div className="mb-6 aspect-square w-full max-w-[276px] tablet:rounded-4xl rounded-2xl">
+            <div className="mb-6 aspect-square w-full max-w-[276px] sm:rounded-4xl xs:rounded-3xl rounded-2xl">
               <img
                 src={member.img}
                 alt={member.name}
