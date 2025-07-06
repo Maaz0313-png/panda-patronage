@@ -3,7 +3,7 @@ import ScrollReveal from "../../components/ScrollReveal";
 const CasesIntro = () => (
   <ScrollReveal>
     <section className="bg-white px-2 py-24 desktop:px-0">
-      <div className="mx-auto mb-14 flex max-w-6xl flex-col items-center justify-between gap-8 tablet:flex-row tablet:items-start">
+      <div className="mx-auto mb-14 flex max-w-6xl flex-col items-start justify-center tablet:px-0 px-8 tablet:justify-between gap-8 tablet:flex-row tablet:items-start">
         <h2
           className="mb-6 w-full text-left text-6xl font-bold text-gray-900 tablet:mb-0 tablet:w-1/2 tablet:text-5xl"
         >
