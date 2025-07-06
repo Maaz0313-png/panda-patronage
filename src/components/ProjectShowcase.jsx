@@ -1,5 +1,5 @@
-import { MdArrowOutward } from "react-icons/md";
 import ScrollReveal from "./ScrollReveal";
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 const CaseCard = ({ title, img, tags, url }) => (
   <a
@@ -14,21 +14,21 @@ const CaseCard = ({ title, img, tags, url }) => (
         className="mb-6 flex w-full items-center justify-center overflow-hidden rounded-2xl"
         style={{
           background: "#23402C",
-          height: 322.422,
-          minHeight: 322.422,
-          maxHeight: 322.422,
         }}
       >
         <img
           src={img}
           alt={title}
-          className="h-[322.422px] w-[532px] object-contain"
+          className="size-full rounded-[inherit] object-cover object-center"
           style={{ maxWidth: 532, maxHeight: 322.422 }}
         />
       </div>
       <div className="flex w-full items-center justify-between text-left">
         <h3 className="mb-3 text-xl font-semibold text-gray-900">{title}</h3>
-        <MdArrowOutward className="ml-2 text-2xl text-gray-700 transition-colors group-hover:text-indigo-600" />
+        <ArrowUpRightIcon
+          className="tablet:opacity-0 tablet:pointer-events-auto tablet:-translate-x-2 tablet:translate-y-2 tablet:group-hover:opacity-100 tablet:group-hover:translate-x-0 tablet:group-hover:translate-y-0 tablet:transition-all tablet:duration-300 opacity-100"
+          size={32}
+        />
       </div>
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
@@ -50,8 +50,8 @@ const CaseCard = ({ title, img, tags, url }) => (
 );
 
 const ProjectShowcase = ({ cases }) => (
-  <section className="bg-white px-2 pb-24 tablet:px-0">
-    <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 tablet:grid-cols-2">
+  <section className="desktop:px-0 bg-white px-8 pb-24">
+    <div className="tablet:grid-cols-2 mx-auto grid max-w-6xl grid-cols-1 gap-8">
       {cases.map((item) => (
         <CaseCard key={item.title} {...item} />
       ))}

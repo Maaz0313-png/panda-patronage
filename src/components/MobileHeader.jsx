@@ -12,6 +12,17 @@ const MobileHeader = ({ activeLink = "Home" }) => {
 
   const [isOpen, toggleOpen] = useCycle(false, true);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Cases", href: "/cases" },
@@ -228,7 +239,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
             isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }
           }
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="fixed right-0 left-0 z-40 mx-2 overflow-hidden rounded-2xl bg-neutral-900 p-6 shadow-lg"
+          className="fixed right-0 left-0 z-40 mx-2 mt-3 overflow-hidden rounded-2xl bg-neutral-900 p-6 shadow-lg"
           style={{ top: scrolled ? 70 : 100 }}
         >
           <nav>
@@ -237,11 +248,11 @@ const MobileHeader = ({ activeLink = "Home" }) => {
                 <li key={item.label} className="group relative">
                   <a
                     href={item.href}
-                    className={`flex items-center gap-2 text-lg font-semibold transition-colors duration-200 ${activeLink === item.label ? "text-white" : "text-neutral-300 hover:text-white"}`}
+                    className={`flex items-center gap-2 text-sm font-medium transition-colors duration-200 ${activeLink === item.label ? "text-white" : "text-neutral-300 hover:text-white"}`}
                   >
                     {/* Dot for active or hover */}
                     <span
-                      className={`mr-2 h-2 w-2 rounded-full bg-white transition-all duration-200 ${activeLink === item.label ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
+                      className={`mr-0 mb-[2.4px] size-[3px] rounded-full bg-white transition-all duration-200 ${activeLink === item.label ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
                     />
                     {item.label}
                   </a>
