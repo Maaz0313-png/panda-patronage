@@ -26,7 +26,7 @@ const ArticleBlogCard = ({
 }) => {
   return (
     <div
-      className={`group relative flex flex-col overflow-hidden rounded-[24px] bg-white ${cardClassName}`}
+      className={`group relative flex flex-col overflow-hidden rounded-[24px] bg-white transition-transform duration-300 hover:-translate-y-2 ${cardClassName}`}
     >
       <img src={image} alt={title} className={`object-cover ${imgClassName}`} />
       <div className="flex flex-1 flex-col px-4 py-6">

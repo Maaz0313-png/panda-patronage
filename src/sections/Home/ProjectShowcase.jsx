@@ -1,5 +1,6 @@
 import React from "react";
 import ScrollReveal from "../../components/ScrollReveal";
+import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 const projects = [
   {
@@ -35,64 +36,62 @@ const projects = [
 ];
 
 const ProjectShowcase = () => (
-    <section className="bg-white px-2 py-24 tablet:px-0">
-      <ScrollReveal className="mx-auto mb-14 max-w-6xl text-center">
-        <h2
-          className="mb-4 text-4xl font-bold text-gray-900 tablet:text-5xl"
-          style={{ fontFamily: "Montserrat, Arial, sans-serif" }}
+  <section className="tablet:px-0 bg-white px-2 py-24">
+    <ScrollReveal className="mx-auto mb-14 max-w-6xl text-center">
+      <h2 className="tablet:text-5xl mb-4 text-4xl font-bold text-gray-900">
+        Building Digital Excellence with Panda.
+      </h2>
+      <p className="mx-auto max-w-2xl text-lg text-gray-500">
+        Discover the innovative marketing strategies that set Neutra apart,
+        driving success in the digital landscape.
+      </p>
+    </ScrollReveal>
+    <div className="desktop:px-0 tablet:grid-cols-2 mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-4">
+      {projects.map((project, idx) => (
+        <ScrollReveal
+          key={project.title}
+          className="group mb-2 flex flex-col items-center rounded-2xl bg-[#f6f7fa] p-6 shadow-sm hover:cursor-pointer"
         >
-          Building Digital Excellence with Panda.
-        </h2>
-        <p className="mx-auto max-w-2xl text-lg text-gray-500">
-          Discover the innovative marketing strategies that set Neutra apart,
-          driving success in the digital landscape.
-        </p>
-      </ScrollReveal>
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 tablet:grid-cols-2">
-        {projects.map((project, idx) => (
-          <ScrollReveal
-            key={project.title}
-            className="mb-2 flex flex-col items-center rounded-2xl bg-[#f6f7fa] p-6 shadow-sm"
-            style={{ minHeight: 420 }}
+          <div
+            className="mb-6 flex w-full items-center justify-center overflow-hidden rounded-2xl"
+            style={{
+              background:
+                idx % 2 === 0
+                  ? "#23402C"
+                  : "linear-gradient(90deg, #6B4EFF 0%, #A259FF 100%)",
+            }}
           >
-            <div
-              className="mb-6 flex w-full items-center justify-center overflow-hidden rounded-2xl"
-              style={{
-                background:
-                  idx % 2 === 0
-                    ? "#23402C"
-                    : "linear-gradient(90deg, #6B4EFF 0%, #A259FF 100%)",
-                height: 322.422,
-                minHeight: 322.422,
-                maxHeight: 322.422,
-              }}
-            >
-              <img
-                src={project.img}
-                alt={project.title}
-                className="h-[322.422px] w-[532px] object-contain"
-                style={{ maxWidth: 532, maxHeight: 322.422 }}
-              />
-            </div>
-            <div className="w-full text-left">
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">
+            <img
+              src={project.img}
+              alt={project.title}
+              className="size-full rounded-[inherit] object-cover object-center transition-transform duration-600 group-hover:scale-110"
+            />
+          </div>
+          <div className="w-full text-left">
+            <div className="mb-3 flex items-center justify-between">
+              <h3 className="text-xl font-semibold text-gray-900">
                 {project.title}
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-gray-300 bg-white px-4 py-1 text-sm font-medium text-gray-700"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
+              <ArrowUpRightIcon
+                className="opacity-100 tablet:opacity-0 tablet:pointer-events-auto tablet:-translate-x-2 tablet:translate-y-2 tablet:group-hover:opacity-100 tablet:group-hover:translate-x-0 tablet:group-hover:translate-y-0 tablet:transition-all tablet:duration-300"
+                size={32}
+              />
             </div>
-          </ScrollReveal>
-        ))}
-      </div>
-    </section>
+            <div className="flex flex-wrap gap-2">
+              {project.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="rounded-full border border-gray-300 bg-white px-4 py-1 text-sm font-medium text-gray-700"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </section>
 );
 
 export default ProjectShowcase;

@@ -8,7 +8,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const Footer = () => {
   return (
-      <ScrollReveal className="flex flex-col justify-between m-4 rounded-2xl bg-gradient-to-tl from-black to-orange-900 px-4 py-10 tablet:px-6 font-sans text-white">
+      <ScrollReveal className="flex flex-col justify-between m-4 rounded-2xl font-sans text-white [background:linear-gradient(-25deg,black_55%,#7c2d12_100%)] px-4 py-10 tablet:px-6">
         <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 pb-8 tablet:grid-cols-3">
           <div className="flex flex-col justify-between tablet:col-span-1">
             <img

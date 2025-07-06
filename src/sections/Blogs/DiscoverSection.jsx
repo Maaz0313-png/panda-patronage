@@ -5,7 +5,7 @@ import articles from "../../data/articles";
 
 const DiscoverSection = () => {
   return (
-    <section className="font-roboto mx-auto w-full max-w-[1200px] px-4 pt-16">
+    <section className="mx-auto w-full max-w-[1200px] px-4 pt-16">
       <ScrollReveal>
         <h2 className="mb-12 text-center text-[40px] leading-[56px] font-bold text-gray-900">
           Discover articles and

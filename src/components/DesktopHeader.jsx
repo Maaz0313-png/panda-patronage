@@ -43,7 +43,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
         className={` items-center flex ${
           scrolled
             ? "mx-auto mt-3 h-[58px] w-[529px] gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
-            : "h-[84px] w-full justify-between bg-[rgb(245,246,249)] px-[152px] py-0"
+            : "h-[84px] w-full justify-between bg-transparent px-[152px] py-0"
         } `}
       >
         {/* ==== LOGO ==== */}

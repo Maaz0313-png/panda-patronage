@@ -10,7 +10,7 @@ const HeroSection = () => {
     <ScrollReveal>
       <section className="flex min-h-[600px] items-center justify-center bg-[#f6f7fa] py-12">
         <div
-          className="[background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] relative mx-auto grid w-full max-w-[1195px] grid-cols-1 items-center rounded-3xl px-10 py-14 shadow-lg tablet:grid-cols-2 tablet:px-16 tablet:py-20"
+          className="[background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] relative mx-auto grid w-full max-w-[1195px] grid-cols-1 items-center rounded-3xl px-4 py-14 shadow-lg tablet:grid-cols-2 tablet:px-10 tablet:py-20"
           style={{ minHeight: 480 }}
         >
           {/* Left: Text */}
@@ -82,7 +82,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/LFAxsa4CpX7e4qBI72ijOV2sHg.png"
               alt="Left shape"
-              className="absolute tablet:hidden desktop:block bottom-[-10px] left-[-40px] z-20 w-[217px] cursor-grab tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px]"
+              className="absolute tablet:hidden desktop:block bottom-[-10px] left-[-20px] z-20 w-[217px] cursor-grab tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px]"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -100,7 +100,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/Tq3lgO9Qy66CFuDaYW99KQ5xoLM.png?scale-down-to=512"
               alt="Right shape"
-              className="absolute desktop:right-[-40px] right-[-40px] desktop:bottom-[-10px] bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] z-20 size-[130px] tablet:size-[180px] cursor-grab"
+              className="absolute desktop:right-[-40px] right-[0px] desktop:bottom-[-10px] bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] z-20 size-[130px] tablet:size-[180px] cursor-grab"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

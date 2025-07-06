@@ -67,7 +67,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
         </motion.div>
       )}
       <header
-        className={`block overflow-x-hidden desktop:hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+        className={`block overflow-x-hidden w-full desktop:hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
       >
         <motion.div
           layout
@@ -76,7 +76,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
           className={`flex items-center justify-between ${
             scrolled
               ? "mx-auto mt-3 h-[58px] w-2/3 gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
-              : "h-[84px] w-full bg-[rgb(245,246,249)] p-4"
+              : "h-[84px] w-full bg-transparent p-4"
           } `}
         >
           {/* ==== LOGO ==== */}
