@@ -5,17 +5,29 @@ const ContactCard = ({
   icon,
   title,
   description,
-  detail,
+  address,
+  protocol = "",
   cardClassName = "",
 }) => (
   <ScrollReveal
-    className={`flex max-w-[340px] min-w-[260px] flex-1 flex-col rounded-[24px] border border-[#F5F6F9] bg-white p-6 shadow-sm ${cardClassName}`}
+    className={`flex flex-1 flex-col rounded-[24px] border border-[#F5F6F9] bg-white p-6 shadow-sm ${cardClassName}`}
   >
     <div className="mb-4">{icon}</div>
-    <div className="mb-1 text-lg font-semibold text-gray-900">{title}</div>
-    <div className="mb-4 text-sm text-gray-500">{description}</div>
-    <div className="my-2 border-t border-[#F5F6F9]" />
-    <div className="mt-2 text-sm break-words text-gray-900">{detail}</div>
+    <h5 className="mb-1 text-lg font-normal text-gray-900">{title}</h5>
+    <p className="mb-4 w-full text-sm text-gray-500">{description}</p>
+    <hr className="border-[#e6e6e6] w-full" />
+    {protocol ? (
+      <a
+        href={`${protocol}:${address}`}
+        className="pt-6 text-sm break-words text-gray-900"
+      >
+        {address}
+      </a>
+    ) : (
+      <address className="pt-6 text-sm break-words text-gray-900 not-italic">
+        {address}
+      </address>
+    )}
   </ScrollReveal>
 );
 

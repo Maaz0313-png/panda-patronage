@@ -25,7 +25,7 @@ export default function BlogDetailDynamic() {
         articles={articles.slice(0, 3)} // Only show the 3 latest articles
         title="Latest Articles"
         subtitle="Stay informed with the latest guides and news."
-        className="mt-20"
+        className="mt-20 bg-white"
       />
     </>
   );

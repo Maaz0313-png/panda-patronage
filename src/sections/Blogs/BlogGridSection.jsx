@@ -22,14 +22,14 @@ const BlogGridSection = ({
         </h2>
         <p className="mb-12 text-center text-base text-gray-500">{subtitle}</p>
       </ScrollReveal>
-      <div className="grid grid-cols-1 justify-center gap-8 tablet:grid-cols-2 desktop:grid-cols-3">
+      <div className="grid grid-cols-1 justify-center gap-8 tablet:grid-cols-3">
         {articles.map((article, idx) => (
           <ScrollReveal key={idx}>
             <div className="flex justify-center">
               <div className="w-[368px]">
                 <ArticleBlogCard
                   {...article}
-                  cardClassName="w-[368px]"
+                  cardClassName="max-w-[368px] w-full"
                   imgClassName="w-[368px] h-[256.5px] rounded-[24px] object-cover"
                   href={`/blog/${encodeURIComponent(article.slug)}`}
                 />

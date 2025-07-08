@@ -4,11 +4,11 @@ import articles from "../data/articles";
 
 const Blogs = () => {
   return (
-    <>
+    <div className="bg-white">
       <DiscoverSection />
       <BlogGridSection articles={articles} />
       {/* sections here */}
-    </>
+    </div>
   );
 };
 

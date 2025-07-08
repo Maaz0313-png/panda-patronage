@@ -237,7 +237,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
         <motion.div
           initial={{ height: 0, opacity: 0 }}
           animate={
-            isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }
+            isOpen ? { height: "auto", opacity: 1, display: "block" } : { height: 0, opacity: 0, display: "none" }
           }
           transition={{ duration: 0.4, ease: "easeInOut" }}
           className="fixed right-0 left-0 z-40 mx-2 mt-3 overflow-hidden rounded-2xl bg-neutral-900 p-6 shadow-lg"

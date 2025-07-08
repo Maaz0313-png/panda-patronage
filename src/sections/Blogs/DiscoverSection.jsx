@@ -24,6 +24,7 @@ const DiscoverSection = () => {
             className="box-border max-w-[564px] min-w-[280px] flex-1"
           >
             <ArticleBlogCard
+              imgClassName="rounded-[24px]"
               {...article}
               href={`/blog/${encodeURIComponent(article.slug)}`}
             />

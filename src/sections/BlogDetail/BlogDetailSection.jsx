@@ -16,38 +16,37 @@ export default function BlogDetailSection({ article }) {
         <ScrollReveal>
           <Link
             to="/blog"
-            className="mb-6 flex items-center text-sm font-medium text-gray-900"
+            className="mb-6 flex items-start text-sm font-medium text-gray-900"
           >
             <GoArrowLeft className="mr-2 inline-block" size={16} /> All articles
           </Link>
-          <h1 className="mb-4 text-4xl leading-tight font-bold text-gray-900">
+          <h1 className="tablet:text-5xl mb-4 text-4xl leading-tight font-bold text-gray-900">
             {title}
           </h1>
         </ScrollReveal>
-        <ScrollReveal className="mb-8 flex w-fit items-center gap-3 rounded-xl bg-gray-50 px-4 py-3">
-          <img
-            src={writer?.image}
-            alt={writer?.name}
-            className="h-6 w-6 rounded-full"
-          />
-          <span className="text-sm font-medium text-gray-900">
-            {writer?.name}
-          </span>
-          <span className="h-1 w-1 rounded-full bg-gray-300" />
-          <span className="flex items-center gap-1 text-sm text-gray-600">
+        <ScrollReveal className="mb-8 grid w-full grid-cols-[fit-content(100%)_fit-content(100%)] tablet:grid-cols-[fit-content(100%)_fit-content(100%)_fit-content(100%)_fit-content(100%)] gap-x-8 gap-y-3 rounded-xl bg-gray-50 px-6 py-5 items-center justify-start">
+          <div className="flex items-center gap-2 w-full">
+            <img
+              src={writer?.image}
+              alt={writer?.name}
+              className="h-6 w-6 rounded-full"
+            />
+            <span className="text-sm font-medium text-gray-900">
+              {writer?.name}
+            </span>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600 w-full">
             <PiClockDuotone size={20} className="inline-block" />
             {readTime}
-          </span>
-          <span className="h-1 w-1 rounded-full bg-gray-300" />
-          <span className="flex items-center gap-1 text-sm text-gray-600">
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600 w-full">
             <PiCalendarBlankDuotone size={20} className="inline-block" />
             {date}
-          </span>
-          <span className="h-1 w-1 rounded-full bg-gray-300" />
-          <span className="flex items-center gap-1 text-sm text-gray-600">
+          </div>
+          <div className="flex items-center gap-2 text-sm text-gray-600 w-full">
             <PiTagDuotone size={20} className="inline-block" />
             {tag}
-          </span>
+          </div>
         </ScrollReveal>
         <ScrollReveal>
           <img
