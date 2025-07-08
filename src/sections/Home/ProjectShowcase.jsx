@@ -5,32 +5,32 @@ import { ArrowUpRightIcon } from "@phosphor-icons/react";
 const projects = [
   {
     title: "Codify",
-    img: "https://framerusercontent.com/images/C46rY8czFx8HjeyGBBr7SnlupM.png",
+    img: "/images/projects/codify.png",
     tags: ["Agency", "Portfolio", "Saas"],
   },
   {
     title: "Taskify",
-    img: "https://framerusercontent.com/images/1EbsYvM5Gyb15ZgRtX8UF7b474.png",
+    img: "/images/projects/taskify.png",
     tags: ["Business", "AI", "Saas"],
   },
   {
     title: "Flexify",
-    img: "https://framerusercontent.com/images/ymBaWuyG4ivgK2aSTlKsfHD7cvo.png",
+    img: "/images/projects/flexify.png",
     tags: ["Saas", "AI", "Business"],
   },
   {
     title: "Landify",
-    img: "https://framerusercontent.com/images/mt2fx3NVaLd8pGv0ERaLEJmc4Y.png",
+    img: "/images/projects/landify.png",
     tags: ["Business", "Portfolio", "Landing"],
   },
   {
     title: "Nexus AI",
-    img: "https://framerusercontent.com/images/kg3eNccUy41ywZMReAJv2nO80gc.png",
+    img: "/images/projects/nexus-ai.png",
     tags: ["AI", "Saas", "Business"],
   },
   {
     title: "Todofusion",
-    img: "https://framerusercontent.com/images/qqgo5MbuI7VXnfS1E4CwLgt7BU.png",
+    img: "/images/projects/todofusion.png",
     tags: ["AI", "Business", "Agency"],
   },
 ];
@@ -73,7 +73,7 @@ const ProjectShowcase = () => (
                 {project.title}
               </h3>
               <ArrowUpRightIcon
-                className="opacity-100 tablet:opacity-0 tablet:pointer-events-auto tablet:-translate-x-2 tablet:translate-y-2 tablet:group-hover:opacity-100 tablet:group-hover:translate-x-0 tablet:group-hover:translate-y-0 tablet:transition-all tablet:duration-300"
+                className="tablet:opacity-0 tablet:pointer-events-auto tablet:-translate-x-2 tablet:translate-y-2 tablet:group-hover:opacity-100 tablet:group-hover:translate-x-0 tablet:group-hover:translate-y-0 tablet:transition-all tablet:duration-300 opacity-100"
                 size={32}
               />
             </div>

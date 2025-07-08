@@ -5,14 +5,14 @@ const services = [
   {
     title: "Branding",
     desc: "Your company’s identity hinges on branding. We assist in shaping a distinct voice and identity.",
-    img: "https://framerusercontent.com/images/SrW1Ux5MtGYoPFNopWE6a1C0.jpg",
+    img: "/images/services/branding-service.jpg",
     icons: [
       {
-        src: "https://framerusercontent.com/images/Fp09fc507ocX7P8MZ47tH3es9ig.png",
+        src: "/images/serviceIcons/adobe-illustrator.png",
         alt: "Adobe Illustrator Logo",
       },
       {
-        src: "https://framerusercontent.com/images/7GWO4ayVlkwffxwuedUuwm8fkz0.png",
+        src: "/images/serviceIcons/adobe-photoshop.png",
         alt: "Adobe Photoshop Logo",
       },
     ],
@@ -22,15 +22,15 @@ const services = [
     desc: "Your audience resides on social media, and we ensure your presence there! Our social media management services maintain your profiles.",
     icons: [
       {
-        src: "https://framerusercontent.com/images/so6zz1hYgNsUyUiichSAyeLN6mk.png",
+        src: "/images/socialIcons/linkedin.png",
         alt: "LinkedIn Logo",
       },
       {
-        src: "https://framerusercontent.com/images/FXrLgI4mV4BrYpx766r3SKJsk.png",
+        src: "/images/socialIcons/facebook.png",
         alt: "Facebook Logo",
       },
       {
-        src: "https://framerusercontent.com/images/CW3W7FdNyoeDoTg3cqbFxT8Rg.png",
+        src: "/images/socialIcons/instagram.png",
         alt: "Instagram Logo",
       },
     ],
@@ -38,35 +38,35 @@ const services = [
   {
     title: "Graphic Designing",
     desc: "Our visual design solutions generate powerful imagery, from logos to promotional resources, that deliver your message effectively.",
-    img: "https://framerusercontent.com/images/2fagzZknRmiCRjgb6dyGnm6x8I.png?scale-down-to=512",
+    img: "/images/services/graphic-designing.png",
   },
   {
     title: "Meta Advertisement",
     desc: "Target the right audience and maximize ROI with our Meta ad campaigns on FB and Instagram.",
-    img: "https://framerusercontent.com/images/dNFE2DKe1j69lloc68x5v3NJCEk.png",
+    img: "/images/services/meta-advertisement.png",
   },
   {
     title: "Web Development",
     desc: "Your website is your digital storefront—we’re designed to captivate, engage, and drive traffic.",
     icons: [
       {
-        src: "https://framerusercontent.com/images/X7wo3DMwzedPcHDgbHtDISpsE.png",
+        src: "/images/techIcons/laravel.png",
         alt: "Laravel Logo",
       },
       {
-        src: "https://framerusercontent.com/images/kXOpgXYfialgKihFqYASFYooY.png",
+        src: "/images/techIcons/bootstrap.png",
         alt: "Bootstrap Logo",
       },
       {
-        src: "https://framerusercontent.com/images/20SUxAcst6wjv4rMWpsfLwgYAk.png",
+        src: "/images/techIcons/tailwind.png",
         alt: "Tailwind CSS Logo",
       },
       {
-        src: "https://framerusercontent.com/images/6OWebZwFmSe4y1SoII0ZJsV7wQs.png",
+        src: "/images/techIcons/react.png",
         alt: "React Logo",
       },
       {
-        src: "https://framerusercontent.com/images/1wtdsMCt2bJYIDiInF1vo83I.png",
+        src: "/images/techIcons/php.png",
         alt: "PHP Logo",
       },
     ],
@@ -78,7 +78,7 @@ const OurServices = () => (
     <div className="desktop:w-[1232px] desktop:h-[872px] relative mx-auto w-full overflow-hidden">
       {/* BG image overlay */}
       <img
-        src="https://framerusercontent.com/images/tNwDDOqRU2cDaNGi31xKVXpxbdA.jpg?scale-down-to=2048"
+        src="/images/backgrounds/services-bg.jpg"
         alt="BG"
         className="absolute inset-0 z-0 h-full w-full object-cover object-[center_center]"
         style={{ filter: "brightness(0.55)" }}
@@ -99,9 +99,9 @@ const OurServices = () => (
           </p>
         </div>
         {/* Cards grid */}
-        <div className="flex h-fit w-full flex-col flex-nowrap gap-4 desktop:flex-row desktop:h-[584px]">
+        <div className="desktop:flex-row desktop:h-[584px] flex h-fit w-full flex-col flex-nowrap gap-4">
           {/* Card 1: Branding */}
-          <ScrollReveal className="flex flex-col rounded-[9px] bg-white/90 p-6 shadow-md w-full desktop:flex-[66.447%] desktop:h-[93.838%]">
+          <ScrollReveal className="desktop:flex-[66.447%] desktop:h-[93.838%] flex w-full flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
             <img
               src={services[0].img}
               alt="Branding"
@@ -122,14 +122,14 @@ const OurServices = () => (
               ))}
             </div>
           </ScrollReveal>
-          <div className="flex flex-col justify-between gap-4 w-full desktop:h-[548px]">
+          <div className="desktop:h-[548px] flex w-full flex-col justify-between gap-4">
             {/* Card 2: Social Media Management (row 1, col 2) */}
-            <ScrollReveal className="flex min-h-[210px] w-full flex-col rounded-[9px] bg-white/90 p-6 shadow-md desktop:w-[353.84px]">
+            <ScrollReveal className="desktop:w-[353.84px] flex min-h-[210px] w-full flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
               <h3 className="mb-1 text-lg font-semibold text-gray-900">
                 {services[1].title}
               </h3>
               <p className="mb-4 text-sm text-gray-700">{services[1].desc}</p>
-              <div className="mt-auto flex items-center pl-4 gap-2">
+              <div className="mt-auto flex items-center gap-2 pl-4">
                 {services[1].icons.map((icon, i) => (
                   <img
                     key={i}
@@ -141,7 +141,7 @@ const OurServices = () => (
               </div>
             </ScrollReveal>
             {/* Card 3: Meta Advertisement (row 2, col 2) */}
-            <ScrollReveal className="flex w-full flex-col rounded-[9px] bg-white/90 p-5 shadow-md desktop:h-[322px] desktop:w-[353.84px]">
+            <ScrollReveal className="desktop:h-[322px] desktop:w-[353.84px] flex w-full flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
               <img
                 src={services[3].img}
                 alt="Meta Advertisement"
@@ -153,9 +153,9 @@ const OurServices = () => (
               <p className="mb-4 text-sm text-gray-700">{services[3].desc}</p>
             </ScrollReveal>
           </div>
-          <div className="flex flex-col justify-between gap-4 w-full desktop:h-[548px]">
+          <div className="desktop:h-[548px] flex w-full flex-col justify-between gap-4">
             {/* Card 4: Graphic Designing */}
-            <ScrollReveal className="flex flex-col rounded-[9px] bg-white/90 p-5 shadow-md w-full desktop:h-[342px]">
+            <ScrollReveal className="desktop:h-[342px] flex w-full flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
               <img
                 src={services[2].img}
                 alt="Graphic Designing"
@@ -168,7 +168,7 @@ const OurServices = () => (
             </ScrollReveal>
 
             {/* Card 5: Web Development (row 2, col 3) */}
-            <ScrollReveal className="flex flex-col rounded-[9px] bg-white/90 p-5 shadow-md w-full desktop:h-[190px]">
+            <ScrollReveal className="desktop:h-[190px] flex w-full flex-col rounded-[9px] bg-white/90 p-5 shadow-md">
               <h3 className="mb-1 text-lg font-semibold text-gray-900">
                 {services[4].title}
               </h3>

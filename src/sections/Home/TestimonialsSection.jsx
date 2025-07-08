@@ -6,7 +6,7 @@ const testimonials = [
     name: "Owner",
     company: "Elite Fitness Co.",
     text: "Working with Panda Patronage transformed our brand’s online presence. Their innovative strategies increased our website traffic by 45% in just 3 months!",
-    img: "https://framerusercontent.com/modules/PLP5SWQpFPuFrn7tLf3t/suo2OcdmUu5xmjtBXZ7I/assets/CPGgYEBeFy4gDXe5dDzh1qjQG1w.png",
+    img: "/images/testimonials/elite-fitness-owner.png",
     bg: "#FDF6F3",
     badge: "#fff",
   },
@@ -14,7 +14,7 @@ const testimonials = [
     name: "Manager",
     company: "GreenTech Solutions",
     text: "Panda Patronage took our ad campaigns to the next level. Their full-funnel approach helped us achieve a 200% ROI on our marketing spend.",
-    img: "https://framerusercontent.com/modules/PLP5SWQpFPuFrn7tLf3t/suo2OcdmUu5xmjtBXZ7I/assets/XfjXHJ2H7SzzlzPr1bGFm1T9BpI.png",
+    img: "/images/testimonials/greentech-manager.png",
     bg: "#FFF3ED",
     badge: "#F8E6D9",
   },
@@ -22,24 +22,24 @@ const testimonials = [
     name: "CEO",
     company: "Harmony Skin Care",
     text: "We struggled with brand consistency across platforms until their team created a cohesive strategy that boosted customer engagement.",
-    img: "https://framerusercontent.com/modules/PLP5SWQpFPuFrn7tLf3t/suo2OcdmUu5xmjtBXZ7I/assets/qCpU7HJtiveCC9wTFuh7L4wc8YM.png",
+    img: "/images/testimonials/harmony-ceo.png",
     bg: "#FFF7EB",
     badge: "#F8EED9",
   },
 ];
 
 const logos = [
-  "https://framerusercontent.com/images/RQtplDgO0QaR12FvioQ15mE35kU.svg",
-  "https://framerusercontent.com/images/rim9ymYCtInC2YkivpMBMf8Dn0k.svg",
-  "https://framerusercontent.com/images/EwqtQRJ6tQkLQz8wYeL13rdCm5E.svg",
-  "https://framerusercontent.com/images/CgaamTpX7MhPEKWQ5nErcXoxdJc.svg",
-  "https://framerusercontent.com/images/bD64dsBbmhkS3zkf22186FsX4Ac.svg",
-  "https://framerusercontent.com/images/vGXtF9HXsgc9RTwZC0EnFQAc5a0.svg",
-  "https://framerusercontent.com/images/9dwWN9t1Rvolj5dKZVTERoTo.svg",
-  "https://framerusercontent.com/images/WiaTKEhWhhJvWfoS5B6yeBxEqo.svg",
-  "https://framerusercontent.com/images/pWdI1S9RQGdpsjRHvx9SiSIt7Q.svg",
-  "https://framerusercontent.com/images/MD3ZaTHRq3jFe94NbAvLnwbQPE.svg",
-  "https://framerusercontent.com/images/R8dilgEbKuaM28BotYk2pOZ0Sgg.svg",
+  "/images/logos/logo-1.svg",
+  "/images/logos/logo-2.svg",
+  "/images/logos/logo-3.svg",
+  "/images/logos/logo-4.svg",
+  "/images/logos/logo-5.svg",
+  "/images/logos/logo-6.svg",
+  "/images/logos/logo-7.svg",
+  "/images/logos/logo-8.svg",
+  "/images/logos/logo-9.svg",
+  "/images/logos/logo-10.svg",
+  "/images/logos/logo-1.svg", // Using logo-1 as placeholder for the missing one
 ];
 
 const TestimonialsSection = () => {
@@ -57,10 +57,10 @@ const TestimonialsSection = () => {
           time-saving Solutions. Discover client success!
         </p>
       </ScrollReveal>
-      <div className="desktop:flex-row tablet:flex-nowrap desktop:px-0 px-8 mb-12 flex w-full flex-col flex-wrap justify-center gap-7">
+      <div className="desktop:flex-row tablet:flex-nowrap desktop:px-0 tablet:px-8 mb-12 flex w-full flex-col flex-wrap justify-center gap-7 px-4">
         {testimonials.map((t, i) => (
           <ScrollReveal
-            className="desktop:mx-0 mx-auto flex w-full desktop:max-w-[340px] min-w-[320px] flex-1 flex-col items-start gap-4 rounded-2xl px-6 py-7 shadow-md"
+            className="desktop:mx-0 desktop:max-w-[340px] tablet:min-w-[280px] mx-auto flex w-full flex-1 flex-col items-start gap-4 rounded-2xl px-6 py-7 shadow-md"
             style={{ background: t.bg }}
             key={i}
           >

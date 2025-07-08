@@ -2,8 +2,7 @@
 const articles = [
   {
     slug: "the-ux-revolution-shaping-digital-experiences",
-    image:
-      "https://framerusercontent.com/images/vss98kimC7Rm3BkWtOJ4E7PF0.png?scale-down-to=512",
+    image: "/images/articles/ux-revolution.png",
     date: "Nov 24, 2023",
     tag: "UX Design",
     title: "The UX Revolution: Shaping Digital Experiences",
@@ -19,14 +18,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "crafting-exceptional-user-experiences",
-    image: "https://framerusercontent.com/images/HvEjI5nnCrtIvttqSWsyCuVM.jpg",
+    image: "/images/articles/crafting-exceptional-ux.jpg",
     date: "Nov 15, 2023",
     tag: "UX Design",
     title: "Crafting Exceptional User Experiences",
@@ -42,15 +40,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "ui-design-elevating-experiences",
-    image:
-      "https://framerusercontent.com/images/4cF7vTWqSD6k0W86ffeveQjsc2Q.png",
+    image: "/images/articles/ui-design-elevating.png",
     date: "Oct 12, 2023",
     tag: "UI Design",
     title: "UI Design: Elevating Experiences",
@@ -66,15 +62,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "3 min read",
   },
   {
     slug: "mastering-ui-design-trends-a-deep-dive",
-    image:
-      "https://framerusercontent.com/images/5GbIrngxJhowImxRpAWUx622xc.png?scale-down-to=512",
+    image: "/images/articles/mastering-ui-trends.png",
     date: "Nov 24, 2023",
     tag: "UI Design",
     title: "Mastering UI Design Trends: A Deep Dive",
@@ -90,15 +84,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "the-power-of-responsive-web-design",
-    image:
-      "https://framerusercontent.com/images/gEuLZWqISbowA6Z5TeEzISEsgs.jpg?scale-down-to=512",
+    image: "/images/articles/responsive-web-design.jpg",
     date: "Nov 23, 2023",
     tag: "Web design",
     title: "The Power of Responsive Web Design",
@@ -113,15 +105,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "mastering-the-craft-of-user-experience-design",
-    image:
-      "https://framerusercontent.com/images/32Ao0YOpynUtm9KTYphzi9oT2eQ.jpg?scale-down-to=512",
+    image: "/images/articles/mastering-ux-craft.jpg",
     date: "Nov 15, 2023",
     tag: "UX Design",
     title: "Mastering the Craft of User Experience Design",
@@ -137,15 +127,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "revolutionizing-ux-design",
-    image:
-      "https://framerusercontent.com/images/KjsfCaVMvkjlLs2CFlHb4HZqE.jpg?scale-down-to=1024",
+    image: "/images/articles/revolutionizing-ux.jpg",
     date: "Nov 5, 2023",
     tag: "UX Design",
     title: "Revolutionizing UX Design",
@@ -160,14 +148,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "10-web-design-trends-to-watch-in-2023",
-    image: "https://framerusercontent.com/images/CteRnkedt2SHUnA2jjD4Ds7Y.jpg",
+    image: "/images/articles/web-design-trends-2023.jpg",
     date: "Nov 22, 2023",
     tag: "Web design",
     title: "10 Web Design Trends to Watch in 2023",
@@ -189,15 +176,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "5 min read",
   },
   {
     slug: "the-art-of-responsive-web-design",
-    image:
-      "https://framerusercontent.com/images/QvhBmuXxN4j9e9lYPSdADXY9mE.jpg?scale-down-to=512",
+    image: "/images/articles/art-responsive-design.jpg",
     date: "Dec 27, 2023",
     tag: "Web design",
     title: "The Art of Responsive Web Design",
@@ -213,15 +198,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "boosting-website-performance-with-smart-design-practices",
-    image:
-      "https://framerusercontent.com/images/IBw4Si6UN9kcQoOJzmLjrFRQ.jpg?scale-down-to=512",
+    image: "/images/articles/website-performance.jpg",
     date: "Dec 6, 2023",
     tag: "Web design",
     title: "Boosting Website Performance with Smart Design Practices",
@@ -237,15 +220,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "crafting-exceptional-user-interfaces",
-    image:
-      "https://framerusercontent.com/images/GEAbPaLGvmC6oHqfJUtgkOIs4lA.jpg?scale-down-to=512",
+    image: "/images/articles/crafting-exceptional-ui.jpg",
     date: "Nov 3, 2023",
     tag: "UI Design",
     title: "Crafting Exceptional User Interfaces",
@@ -261,15 +242,13 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },
   {
     slug: "mastering-mobile-ui-design-best-practices-for-a-seamless-experience",
-    image:
-      "https://framerusercontent.com/images/6RUmSize6gWxKuNHFjc2Kg9Vkos.jpg?scale-down-to=512",
+    image: "/images/articles/mastering-mobile-ui.jpg",
     date: "Sep 23, 2023",
     tag: "UI Design",
     title:
@@ -286,8 +265,7 @@ const articles = [
     ],
     writer: {
       name: "Anastasia Solovyova",
-      image:
-        "https://framerusercontent.com/images/cfae5rVbOPJ9IKMr5XZltSR4.png",
+      image: "/images/writers/anastasia-solovyova.png",
     },
     readTime: "4 min read",
   },

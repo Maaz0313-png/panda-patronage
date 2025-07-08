@@ -35,20 +35,24 @@ function MotionHeading({ children, className }) {
     <div ref={ref} className={className}>
       <AnimatePresence>
         {isInView && (
-          <span>
+          <span className="inline-block w-full">
             {items.map((item, idx) => {
               if (item.type === "br") {
                 return <br key={`br-${idx}`} />;
               }
               if (item.type === "space") {
-                return item.value.split("").map((sp, i) => (
-                  <span key={`space-${idx}-${i}`}>{sp === " " ? "\u00A0" : sp}</span>
-                ));
+                return item.value
+                  .split("")
+                  .map((sp, i) => (
+                    <span key={`space-${idx}-${i}`}>
+                      {sp === " " ? "\u00A0" : sp}
+                    </span>
+                  ));
               }
               if (item.type === "word") {
                 const word = item.value;
                 return (
-                  <span className="whitespace-nowrap" key={`word-${idx}`}> 
+                  <span className="inline-block" key={`word-${idx}`}>
                     {word.split("").map((char, cidx) => {
                       const delay = charIdx * 0.04;
                       const thisIdx = charIdx;
@@ -82,7 +86,9 @@ function MotionHeading({ children, className }) {
                             ease: [0.6, 0.6, 0, 1],
                           }}
                           className="animated-char"
-                          onAnimationComplete={() => setDone((prev) => ({ ...prev, [thisIdx]: true }))}
+                          onAnimationComplete={() =>
+                            setDone((prev) => ({ ...prev, [thisIdx]: true }))
+                          }
                         >
                           {char === " " ? "\u00A0" : char}
                         </motion.span>
@@ -101,25 +107,25 @@ function MotionHeading({ children, className }) {
 }
 
 const ImpactStatement = () => (
-  <section className="relative flex w-full items-center justify-center overflow-visible bg-[#f6f7fa] py-16">
+  <section className="xs:py-16 tablet:py-20 relative flex w-full items-center justify-center overflow-visible bg-[#f6f7fa] py-12">
     <ScrollReveal>
       {/* Star-like object left */}
       <img
-        src="https://framerusercontent.com/images/Gy6oyLvyryjSizdl2va3wLbiYjc.png?scale-down-to=512"
+        src="/images/misc/star-object.png"
         alt="Star Object"
         className="tablet:top-1/2 tablet:left-10 tablet:-translate-y-1/2 tablet:size-16 absolute top-1/5 left-0 size-14"
       />
       {/* Spring object right */}
       <img
-        src="https://framerusercontent.com/images/nVwfJfYTJH4GZwm9UXcHF6NVsr4.png?scale-down-to=512"
+        src="/images/misc/spring-object.png"
         alt="Spring Object"
-        className="tablet:block tablet:h-24 tablet:w-24 absolute top-0 right-16 hidden h-24 w-24"
+        className="tablet:block tablet:h-24 tablet:w-24 absolute top-0 right-16 hidden size-24"
         style={{ minWidth: 96, minHeight: 96 }}
       />
     </ScrollReveal>
 
     <div className="flex w-full flex-1 items-center justify-center">
-      <MotionHeading className="tablet:mx-0 tablet:text-4xl mx-4 max-w-3xl text-center text-3xl leading-snug font-normal text-gray-900">
+      <MotionHeading className="xs:text-xl xs:mx-6 xs:leading-relaxed tablet:mx-0 tablet:text-4xl tablet:leading-snug desktop:text-5xl mx-4 max-w-4xl text-center text-lg leading-relaxed font-normal text-gray-900">
         We have been creating projects that remain relevant today, tomorrow, and
         for decades to come
       </MotionHeading>

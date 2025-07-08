@@ -62,7 +62,7 @@ const HeroSection = () => {
           <div className="tablet:mt-0 desktop:w-[601px] relative mt-10 flex min-h-[370px] items-center justify-center">
             {/* Panda image */}
             <motion.img
-              src="https://framerusercontent.com/images/0ywVpxGO9e9t2ww1smSTEWqHPs.png"
+              src="/images/misc/panda-hero.png"
               alt="Panda with headphones"
               className="desktop:opacity-100 desktop:block desktop:h-[515px] desktop:w-[601px] absolute right-1 -bottom-23 z-10 hidden cursor-grab rounded-br-3xl rounded-bl-3xl opacity-0"
               drag={true}
@@ -71,7 +71,7 @@ const HeroSection = () => {
             />
             {/* Baby Panda image */}
             <motion.img
-              src="https://framerusercontent.com/images/vvZ0ahKCEDuFTVnLLJJ3ZRHUD9M.png"
+              src="/images/misc/baby-panda-hero.png"
               alt="Baby Panda with headphones"
               className="tablet:opacity-100 tablet:block desktop:hidden absolute right-1 bottom-23 z-10 hidden h-[336px] w-[258px] cursor-grab rounded-br-3xl rounded-bl-3xl opacity-0"
               drag={true}
@@ -80,7 +80,7 @@ const HeroSection = () => {
             />
             {/* Left black body - positioned over panda */}
             <motion.img
-              src="https://framerusercontent.com/images/LFAxsa4CpX7e4qBI72ijOV2sHg.png"
+              src="/images/misc/hero-left-shape.png"
               alt="Left shape"
               className="tablet:hidden desktop:block tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px] absolute bottom-[-10px] left-[-20px] z-20 w-[217px] cursor-grab"
               drag={true}
@@ -98,7 +98,7 @@ const HeroSection = () => {
             />
             {/* Right black body - positioned over panda */}
             <motion.img
-              src="https://framerusercontent.com/images/Tq3lgO9Qy66CFuDaYW99KQ5xoLM.png?scale-down-to=512"
+              src="/images/misc/hero-right-shape.png"
               alt="Right shape"
               className="desktop:right-[-40px] desktop:bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] tablet:size-[180px] absolute right-[0px] bottom-[-10px] z-20 size-[130px] cursor-grab"
               drag={true}

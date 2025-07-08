@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-export const DesktopHeader = ({ activeLink = "Home" }) => {
+export const DesktopHeader = ({ activeLink }) => {
   // 1) Dot‐animation (unchanged)
   const dotVariants = {
     rest: { left: "-10px", opacity: 0 },
@@ -36,12 +36,12 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
 
   return (
     <header
-      className={`hidden overflow-x-hidden desktop:block ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+      className={`desktop:block hidden overflow-x-hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
     >
       <motion.div
         layout
         transition={{ type: "spring", stiffness: 150, damping: 40 }}
-        className={` items-center flex ${
+        className={`flex items-center ${
           scrolled
             ? "mx-auto mt-3 h-[58px] w-[529px] gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
             : "h-[84px] w-full justify-between bg-transparent px-[152px] py-0"
@@ -50,7 +50,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
         {/* ==== LOGO ==== */}
         <Link to="/" className="flex-shrink-0">
           <img
-            src="https://framerusercontent.com/images/0R0UXrjNeRBEKk7xpEnnM93qA.png?scale-down-to=512"
+            src="/images/misc/logo.png"
             alt="Panda Patronage Logo"
             className={` ${
               scrolled ? "size-[42px] object-contain" : "size-5 object-contain"
@@ -77,8 +77,11 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
             >
               {links.map(({ label, href }) => {
                 const isActive = label === activeLink;
+                const hasValidActive = links.some(
+                  (link) => link.label === activeLink,
+                );
 
-                if (isActive) {
+                if (isActive && hasValidActive) {
                   return (
                     <li
                       className={`relative ${
@@ -120,6 +123,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
                       } `}
                     >
                       {label}
+                      {/* Show the dot on hover for all non-active links */}
                       <motion.span
                         className={`absolute right-0 bottom-[0px] left-0 size-[3px] rounded-full ${
                           scrolled ? "bg-white" : "bg-[#8e8e8e]"

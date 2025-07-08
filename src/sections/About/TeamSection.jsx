@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: "Michael Lee",
     role: "Analyst",
-    img: "https://framerusercontent.com/images/nFTyhTg9mtSiD0Oh51DGHixETM.jpg",
+    img: "/images/team/michael-lee.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -19,7 +19,7 @@ const teamMembers = [
   {
     name: "Chris Wilson",
     role: "Customer Support",
-    img: "https://framerusercontent.com/images/3lxG5etcVf37NL3i2nIGARTTaI.jpg",
+    img: "/images/team/chris-wilson.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -29,7 +29,7 @@ const teamMembers = [
   {
     name: "Emily Brown",
     role: "Designer",
-    img: "https://framerusercontent.com/images/S9PyleA1z5ugBA2Z87N0r7h5VA.jpg",
+    img: "/images/team/emily-brown.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -39,7 +39,7 @@ const teamMembers = [
   {
     name: "Olena Kurcherenko",
     role: "Designer",
-    img: "https://framerusercontent.com/images/rZmnnPdh2NfRFd8GwnJmVeCq5Ow.jpg",
+    img: "/images/team/olena-kurcherenko.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -49,7 +49,7 @@ const teamMembers = [
   {
     name: "Anastasia Solovyova",
     role: "Product Manager",
-    img: "https://framerusercontent.com/images/7n35wdG8jtT2LMgYCpqeBkSo6s.jpg",
+    img: "/images/team/anastasia-solovyova-team.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -59,7 +59,7 @@ const teamMembers = [
   {
     name: "Sarah Smith",
     role: "Project Manager",
-    img: "https://framerusercontent.com/images/DBL6ct1qK3lvpE5gdCOeBR2CZQ.jpg",
+    img: "/images/team/sarah-smith.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -69,7 +69,7 @@ const teamMembers = [
   {
     name: "David Johnson",
     role: "Founder",
-    img: "https://framerusercontent.com/images/HH8KrojyxZx6X20z1r13CSwiiWE.jpg",
+    img: "/images/team/david-johnson.jpg",
     socials: {
       twitter: "#",
       dribbble: "#",
@@ -100,7 +100,7 @@ const TeamSection = () => (
             key={member.name}
             className="flex w-full max-w-[276px] flex-col items-start"
           >
-            <div className="mb-6 aspect-square w-full max-w-[276px] sm:rounded-4xl xs:rounded-3xl rounded-2xl">
+            <div className="xs:rounded-3xl mb-6 aspect-square w-full max-w-[276px] rounded-2xl sm:rounded-4xl">
               <img
                 src={member.img}
                 alt={member.name}

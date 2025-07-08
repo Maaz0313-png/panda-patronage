@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, useCycle } from "framer-motion";
 import { Link } from "react-router-dom";
 
-const MobileHeader = ({ activeLink = "Home" }) => {
+const MobileHeader = ({ activeLink }) => {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 0);
@@ -15,12 +15,12 @@ const MobileHeader = ({ activeLink = "Home" }) => {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [isOpen]);
 
@@ -79,7 +79,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
         </motion.div>
       )}
       <header
-        className={`block overflow-x-hidden w-full desktop:hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+        className={`desktop:hidden block w-full overflow-x-hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
       >
         <motion.div
           layout
@@ -94,7 +94,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
           {/* ==== LOGO ==== */}
           <Link to="/" className="flex-shrink-0">
             <img
-              src="https://framerusercontent.com/images/0R0UXrjNeRBEKk7xpEnnM93qA.png?scale-down-to=512"
+              src="/images/misc/logo.png"
               alt="Panda Patronage Logo"
               className={` ${
                 scrolled
@@ -237,7 +237,9 @@ const MobileHeader = ({ activeLink = "Home" }) => {
         <motion.div
           initial={{ height: 0, opacity: 0 }}
           animate={
-            isOpen ? { height: "auto", opacity: 1, display: "block" } : { height: 0, opacity: 0, display: "none" }
+            isOpen
+              ? { height: "auto", opacity: 1, display: "block" }
+              : { height: 0, opacity: 0, display: "none" }
           }
           transition={{ duration: 0.4, ease: "easeInOut" }}
           className="fixed right-0 left-0 z-40 mx-2 mt-3 overflow-hidden rounded-2xl bg-neutral-900 p-6 shadow-lg"
@@ -249,6 +251,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
                 <li key={item.label} className="group relative">
                   <Link
                     to={item.href}
+                    onClick={() => toggleOpen()}
                     className={`flex items-center gap-2 text-sm font-medium transition-colors duration-200 ${activeLink === item.label ? "text-white" : "text-neutral-300 hover:text-white"}`}
                   >
                     {/* Dot for active or hover */}
