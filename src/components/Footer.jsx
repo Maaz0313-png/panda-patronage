@@ -5,6 +5,7 @@ import {
   PiTwitterLogoDuotone,
 } from "react-icons/pi";
 import ScrollReveal from "./ScrollReveal";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,28 +29,28 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/"
+                  <Link
+                    to="/"
                     className="text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className="text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -59,28 +60,28 @@ const Footer = () => {
               </h3>
               <ul className="space-y-2">
                 <li>
-                  <a
-                    href="/privacy-policy"
+                  <Link
+                    to="/privacy-policy"
                     className="font-semibold text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/licensing"
+                  <Link
+                    to="/licensing"
                     className="font-semibold text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     Licensing
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/terms-of-use"
+                  <Link
+                    to="/terms-of-use"
                     className="font-semibold text-gray-400 transition-colors duration-300 hover:text-white"
                   >
                     Terms of Use
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

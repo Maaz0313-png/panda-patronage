@@ -2,6 +2,7 @@ import React from "react";
 import ArticleBlogCard from "../../components/ArticleBlogCard";
 import ScrollReveal from "../../components/ScrollReveal";
 import articles from "../../data/articles";
+import { Link } from "react-router-dom";
 
 const DiscoverSection = () => {
   return (

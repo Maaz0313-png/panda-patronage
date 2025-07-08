@@ -1,4 +1,5 @@
 import { HouseIcon } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -14,19 +15,19 @@ const NotFound = () => {
         have been moved, deleted, or never existed in the first place.
       </p>
       <div className="flex gap-3">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 font-semibold text-sm text-white shadow transition hover:bg-gray-800"
         >
           <HouseIcon size={20} weight="fill" />
           Go back home
-        </a>
-        <a
-          href="/contact"
+        </Link>
+        <Link
+          to="/contact"
           className="inline-flex items-center gap-2 rounded-md text-sm bg-gray-100 px-5 py-[14px] font-semibold text-gray-900 transition hover:bg-gray-200"
         >
           Contact
-        </a>
+        </Link>
       </div>
     </div>
   );

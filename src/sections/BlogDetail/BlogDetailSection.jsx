@@ -5,6 +5,7 @@ import {
   PiCalendarBlankDuotone,
 } from "react-icons/pi";
 import ScrollReveal from "../../components/ScrollReveal";
+import { Link } from "react-router-dom";
 
 export default function BlogDetailSection({ article }) {
   if (!article) return null;
@@ -13,12 +14,12 @@ export default function BlogDetailSection({ article }) {
     <section className="flex w-full flex-col items-center px-4 py-12">
       <div className="w-full max-w-3xl">
         <ScrollReveal>
-          <a
-            href="/blog"
+          <Link
+            to="/blog"
             className="mb-6 flex items-center text-sm font-medium text-gray-900"
           >
             <GoArrowLeft className="mr-2 inline-block" size={16} /> All articles
-          </a>
+          </Link>
           <h1 className="mb-4 text-4xl leading-tight font-bold text-gray-900">
             {title}
           </h1>

@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import ScrollReveal from "./ScrollReveal";
 import { ArrowUpRightIcon } from "@phosphor-icons/react";
 
 const CaseCard = ({ title, img, tags, url }) => (
-  <a
-    href={url}
+  <Link
+    to={url}
     target="_blank"
     rel="noopener noreferrer"
     className="group relative mb-2 flex h-full w-full flex-col items-center rounded-2xl bg-[#f6f7fa] p-6 shadow-sm transition-transform hover:scale-[1.025] focus:ring-2 focus:ring-indigo-500 focus:outline-none"
@@ -46,7 +47,7 @@ const CaseCard = ({ title, img, tags, url }) => (
         tabIndex={-1}
       ></span>
     </ScrollReveal>
-  </a>
+  </Link>
 );
 
 const ProjectShowcase = ({ cases }) => (

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const DesktopHeader = ({ activeLink = "Home" }) => {
   // 1) Dot‐animation (unchanged)
@@ -47,7 +48,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
         } `}
       >
         {/* ==== LOGO ==== */}
-        <a href="/" className="flex-shrink-0">
+        <Link to="/" className="flex-shrink-0">
           <img
             src="https://framerusercontent.com/images/0R0UXrjNeRBEKk7xpEnnM93qA.png?scale-down-to=512"
             alt="Panda Patronage Logo"
@@ -55,7 +56,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
               scrolled ? "size-[42px] object-contain" : "size-5 object-contain"
             } `}
           />
-        </a>
+        </Link>
 
         {/* ==== NAV LINKS + CTA ==== */}
         <div
@@ -85,8 +86,8 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
                       } `}
                       key={label}
                     >
-                      <a
-                        href={href}
+                      <Link
+                        to={href}
                         className={`relative cursor-[unset] text-sm font-medium ${
                           scrolled ? "text-white" : "text-black"
                         } `}
@@ -97,7 +98,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
                             scrolled ? "bg-white" : "bg-black"
                           } `}
                         />
-                      </a>
+                      </Link>
                     </li>
                   );
                 }
@@ -112,8 +113,8 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
                     whileHover="hover"
                     animate="rest"
                   >
-                    <a
-                      href={href}
+                    <Link
+                      to={href}
                       className={`relative px-2 py-1 text-sm font-medium ${
                         scrolled ? "text-white" : "text-black"
                       } `}
@@ -125,7 +126,7 @@ export const DesktopHeader = ({ activeLink = "Home" }) => {
                         } `}
                         variants={dotVariants}
                       />
-                    </a>
+                    </Link>
                   </motion.li>
                 );
               })}

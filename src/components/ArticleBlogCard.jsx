@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /**
  * ArticleBlogCard - A responsive, pixel-perfect blog/article card using TailwindCSS.
@@ -44,12 +45,11 @@ const ArticleBlogCard = ({
           {description}
         </div>
       </div>
-      <a
-        href={href}
+      <Link to={href}
         className="absolute inset-0 z-10"
         tabIndex="-1"
         aria-label={title}
-      ></a>
+      ></Link>
     </div>
   );
 };

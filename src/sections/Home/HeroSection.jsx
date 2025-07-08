@@ -2,22 +2,21 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import ScrollReveal from "../../components/ScrollReveal";
 import { ArrowRightIcon } from "@phosphor-icons/react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [ctaHovered, setCtaHovered] = useState(false);
 
   return (
     <ScrollReveal>
-      <section className="flex min-h-[600px] items-center justify-center bg-[#f6f7fa] py-12">
+      <section className="tablet:p-6 tablet:pb-20 desktop:pb-24 flex min-h-[600px] items-center justify-center bg-transparent p-4 pb-12">
         <div
-          className="[background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] relative mx-auto grid w-full max-w-[1195px] grid-cols-1 items-center rounded-3xl px-4 py-14 shadow-lg tablet:grid-cols-2 tablet:px-10 tablet:py-20"
+          className="tablet:grid-cols-2 tablet:px-10 tablet:py-20 desktop:p-16 desktop:pt-[100px] relative grid w-full max-w-[1195px] grid-cols-1 items-center rounded-xl [background-image:linear-gradient(116deg,_rgb(152,59,0)_0%,_rgb(92,36,0)_9%,_rgb(31,31,31)_31%)] px-4 py-14 shadow-lg"
           style={{ minHeight: 480 }}
         >
           {/* Left: Text */}
-          <div className="flex flex-col justify-center flex-3/4">
-            <h1
-              className="mb-8 text-5xl w-full leading-tight font-light text-white tablet:text-6xl max-w-[640px]"
-            >
+          <div className="flex flex-3/4 flex-col justify-center">
+            <h1 className="tablet:text-[75px] mb-8 w-full max-w-[640px] text-5xl leading-tight font-thin text-white">
               We&apos;re Creative
               <br />
               Digital Marketing
@@ -28,7 +27,8 @@ const HeroSection = () => {
               We&apos;re here to help you see through the eyes of your audience,
               paving the way for your success without limits.
             </p>
-            <button
+            <Link
+              to="/contact"
               onMouseEnter={() => setCtaHovered(true)}
               onMouseLeave={() => setCtaHovered(false)}
               className={`relative flex size-fit cursor-pointer items-center overflow-hidden rounded-xl bg-[rgba(255,255,255,0.2)] px-0 py-1.5 text-white`}
@@ -56,15 +56,15 @@ const HeroSection = () => {
               <span className="mr-1.5 ml-1 flex size-10 items-center justify-center rounded-lg bg-[#ff7a1a] p-1">
                 <ArrowRightIcon size={20} />
               </span>
-            </button>
+            </Link>
           </div>
           {/* Right: Panda and shapes */}
-          <div className="relative mt-10 flex min-h-[370px] items-center justify-center tablet:mt-0 desktop:w-[601px]">
+          <div className="tablet:mt-0 desktop:w-[601px] relative mt-10 flex min-h-[370px] items-center justify-center">
             {/* Panda image */}
             <motion.img
               src="https://framerusercontent.com/images/0ywVpxGO9e9t2ww1smSTEWqHPs.png"
               alt="Panda with headphones"
-              className="absolute right-1 -bottom-23 z-10 hidden opacity-0 desktop:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl desktop:block desktop:h-[515px] desktop:w-[601px]"
+              className="desktop:opacity-100 desktop:block desktop:h-[515px] desktop:w-[601px] absolute right-1 -bottom-23 z-10 hidden cursor-grab rounded-br-3xl rounded-bl-3xl opacity-0"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -73,7 +73,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/vvZ0ahKCEDuFTVnLLJJ3ZRHUD9M.png"
               alt="Baby Panda with headphones"
-              className="absolute right-1 bottom-23 z-10 hidden opacity-0 tablet:opacity-100 cursor-grab rounded-br-3xl rounded-bl-3xl tablet:block desktop:hidden h-[336px] w-[258px]"
+              className="tablet:opacity-100 tablet:block desktop:hidden absolute right-1 bottom-23 z-10 hidden h-[336px] w-[258px] cursor-grab rounded-br-3xl rounded-bl-3xl opacity-0"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -82,7 +82,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/LFAxsa4CpX7e4qBI72ijOV2sHg.png"
               alt="Left shape"
-              className="absolute tablet:hidden desktop:block bottom-[-10px] left-[-20px] z-20 w-[217px] cursor-grab tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px]"
+              className="tablet:hidden desktop:block tablet:-bottom-40 tablet:left-[-60px] tablet:h-[209.625px] tablet:w-[217px] absolute bottom-[-10px] left-[-20px] z-20 w-[217px] cursor-grab"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
@@ -100,7 +100,7 @@ const HeroSection = () => {
             <motion.img
               src="https://framerusercontent.com/images/Tq3lgO9Qy66CFuDaYW99KQ5xoLM.png?scale-down-to=512"
               alt="Right shape"
-              className="absolute desktop:right-[-40px] right-[0px] desktop:bottom-[-10px] bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] z-20 size-[130px] tablet:size-[180px] cursor-grab"
+              className="desktop:right-[-40px] desktop:bottom-[-10px] tablet:right-[10px] tablet:bottom-[-90px] tablet:size-[180px] absolute right-[0px] bottom-[-10px] z-20 size-[130px] cursor-grab"
               drag={true}
               dragElastic={1}
               dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

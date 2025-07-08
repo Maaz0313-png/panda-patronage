@@ -19,7 +19,7 @@ const WhatSetsUsApart = () => (
       <div className="mx-auto grid px-8 desktop:px-0 w-full grid-cols-1 gap-4 desktop:grid-cols-3">
         {/* Card 1 */}
         <ScrollReveal className="flex flex-col w-full items-start rounded-3xl bg-white p-8 text-left desktop:h-[260px] desktop:w-[373.328px]">
-          <PiRocketDuotone className="mb-4" size={48} />
+          <PiRocketDuotone color="#8e8e8e" className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Planning Phase
           </h3>
@@ -30,7 +30,7 @@ const WhatSetsUsApart = () => (
         </ScrollReveal>
         {/* Card 2 */}
         <ScrollReveal className="flex flex-col w-full items-start rounded-3xl bg-white p-8 text-left desktop:h-[260px] desktop:w-[373.328px]">
-          <UsersThreeIcon weight="duotone" className="mb-4" size={48} />
+          <UsersThreeIcon color="#8e8e8e" weight="duotone" className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Strategy Blueprint
           </h3>
@@ -41,7 +41,7 @@ const WhatSetsUsApart = () => (
         </ScrollReveal>
         {/* Card 3 */}
         <ScrollReveal className="flex flex-col w-full items-start rounded-3xl bg-white p-8 text-left desktop:h-[260px] desktop:w-[373.328px]">
-          <PiGearDuotone className="mb-4" size={48} />
+          <PiGearDuotone color="#8e8e8e" className="mb-4" size={48} />
           <h3 className="mb-2 text-2xl font-normal text-gray-900">
             Working Process
           </h3>

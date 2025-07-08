@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, useCycle } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const MobileHeader = ({ activeLink = "Home" }) => {
   const [scrolled, setScrolled] = useState(false);
@@ -91,7 +92,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
           } `}
         >
           {/* ==== LOGO ==== */}
-          <a href="/" className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0">
             <img
               src="https://framerusercontent.com/images/0R0UXrjNeRBEKk7xpEnnM93qA.png?scale-down-to=512"
               alt="Panda Patronage Logo"
@@ -101,7 +102,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
                   : "size-5 object-contain"
               } `}
             />
-          </a>
+          </Link>
 
           {/* ==== NAV HAMBURGER + CTA ==== */}
           <div className={`flex items-center ${scrolled ? "gap-2" : "gap-8"}`}>
@@ -246,8 +247,8 @@ const MobileHeader = ({ activeLink = "Home" }) => {
             <ul className="flex flex-col gap-6">
               {menuItems.map((item) => (
                 <li key={item.label} className="group relative">
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className={`flex items-center gap-2 text-sm font-medium transition-colors duration-200 ${activeLink === item.label ? "text-white" : "text-neutral-300 hover:text-white"}`}
                   >
                     {/* Dot for active or hover */}
@@ -255,7 +256,7 @@ const MobileHeader = ({ activeLink = "Home" }) => {
                       className={`mr-0 mb-[2.4px] size-[3px] rounded-full bg-white transition-all duration-200 ${activeLink === item.label ? "opacity-100" : "opacity-0 group-hover:opacity-100"}`}
                     />
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
