@@ -13,19 +13,28 @@ const Contact = () => {
     <div className="flex min-h-screen w-full flex-col items-center bg-white px-2 py-12">
       {/* Header Section */}
       <div className="mb-10 flex flex-col items-center">
-        <ScrollReveal as="span" className="mb-4 rounded-full bg-[#F5F6F9] px-4 py-1 text-xs tracking-widest text-gray-500">
+        <ScrollReveal
+          as="span"
+          className="mb-4 rounded-full bg-[#F5F6F9] px-4 py-1 text-sm tracking-widest text-gray-500"
+        >
           NEUTRA CONTACT
         </ScrollReveal>
-        <ScrollReveal as="h1" className="mb-4 text-center text-4xl font-bold text-gray-900 tablet:text-5xl">
+        <ScrollReveal
+          as="h1"
+          className="tablet:text-4xl tablet:font-bold mb-4 text-center text-2xl text-gray-900"
+        >
           Get in touch with us today!
         </ScrollReveal>
-        <ScrollReveal as="p" className="max-w-xl text-center text-gray-500">
+        <ScrollReveal
+          as="p"
+          className="tablet:text-lg max-w-xl text-center text-base text-gray-500"
+        >
           Contact our sales and support teams for demos, onboarding assistance,
           or any product inquiries.
         </ScrollReveal>
       </div>
       {/* Contact Cards Section */}
-      <div className="mb-12 flex w-full max-w-5xl flex-col gap-6 px-6 mx-auto tablet:flex-row">
+      <div className="tablet:flex-row mx-auto mb-12 flex w-full max-w-5xl flex-col gap-6 px-6">
         <ContactCard
           icon={
             <ChatsIcon size={32} weight="duotone" className="text-gray-900" />
@@ -55,9 +64,9 @@ const Contact = () => {
         />
       </div>
       {/* Contact Form Section */}
-      <ScrollReveal className="flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm tablet:flex-row">
+      <ScrollReveal className="tablet:flex-row flex w-full max-w-6xl flex-col justify-between gap-8 rounded-[24px] border-10 border-[#F5F6F9] bg-white p-8 shadow-sm">
         {/* Left Info */}
-        <div className="mb-6 flex flex-1 flex-col tablet:mb-0">
+        <div className="tablet:mb-0 mb-6 flex flex-1 flex-col">
           <div className="mb-3 flex items-center">
             <PiRocketDuotone size={32} className="mr-3 text-gray-900" />
           </div>
@@ -127,7 +136,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="mt-2 w-full rounded-lg bg-black py-2 text-sm font-medium text-white transition hover:bg-[rgb(56,56,56)] hover:cursor-pointer"
+            className="mt-2 w-full rounded-lg bg-black py-2 text-sm font-medium text-white transition hover:cursor-pointer hover:bg-[rgb(56,56,56)]"
           >
             Submit
           </button>

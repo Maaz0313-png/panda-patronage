@@ -17,12 +17,14 @@ const BlogGridSection = ({
         <div className="h-px w-3/4 bg-gray-200" />
       </div>
       <ScrollReveal>
-        <h2 className="mb-2 text-center text-[40px] leading-[56px] font-bold text-gray-900">
+        <h2 className="tablet:text-4xl tablet:font-bold mb-2 text-center text-2xl leading-[56px] text-gray-900">
           {title}
         </h2>
-        <p className="mb-12 text-center text-base text-gray-500">{subtitle}</p>
+        <p className="tablet:text-lg mb-12 text-center text-base text-gray-500">
+          {subtitle}
+        </p>
       </ScrollReveal>
-      <div className="grid grid-cols-1 justify-center gap-8 tablet:grid-cols-3">
+      <div className="tablet:grid-cols-3 grid grid-cols-1 justify-center gap-8">
         {articles.map((article, idx) => (
           <ScrollReveal key={idx}>
             <div className="flex justify-center">

@@ -10,13 +10,13 @@ const DirectorSection = () => (
         </ScrollReveal>
         <ScrollReveal
           as="h2"
-          className="font-roboto tablet:text-[48px] mb-4 text-center text-[40px] font-bold"
+          className="font-roboto tablet:text-4xl mb-4 text-center text-2xl font-bold"
         >
           Insights from Our Director
         </ScrollReveal>
         <ScrollReveal
           as="p"
-          className="font-roboto mb-8 max-w-2xl text-center text-lg text-gray-500"
+          className="font-roboto tablet:text-lg mb-8 max-w-2xl text-center text-base text-gray-500"
         >
           Hear directly from our Agency Director about how Neutra is shaping the
           future of digital design and innovation.

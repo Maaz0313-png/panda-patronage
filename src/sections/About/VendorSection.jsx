@@ -5,10 +5,10 @@ const VendorSection = () => {
     <div className="bg-transparent py-10">
       <div className="mx-auto flex max-w-[1200px] flex-col items-center rounded-[32px] bg-white px-8 pt-12 pb-8 shadow-sm">
         <ScrollReveal className="tablet:flex-row mx-4 mb-8 flex w-full flex-col items-center justify-between">
-          <h1 className="tablet:w-[524px] tablet:text-left mx-auto mb-4 justify-start text-center text-[48px] leading-tight font-bold">
+          <h1 className="tablet:w-[524px] tablet:text-left tablet:text-4xl tablet:font-bold mx-auto mb-4 justify-start text-center text-2xl leading-tight">
             Not sure how to choose a vendor?
           </h1>
-          <p className="tablet:w-[420px] tablet:text-left mx-auto mb-8 max-w-[600px] justify-end text-center text-[18px] font-normal text-[#222]">
+          <p className="tablet:w-[420px] tablet:text-left tablet:text-lg mx-auto mb-8 max-w-[600px] justify-end text-center text-base font-normal text-[#222]">
             At Fulcrum we always find a way, also, we are courageously honest
             and we most certainly give a damn.
           </p>

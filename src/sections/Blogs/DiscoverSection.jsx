@@ -8,7 +8,7 @@ const DiscoverSection = () => {
   return (
     <section className="mx-auto w-full max-w-[1200px] px-4 pt-16">
       <ScrollReveal>
-        <h2 className="mb-12 text-center text-[40px] leading-[56px] font-bold text-gray-900">
+        <h2 className="tablet:text-4xl tablet:font-bold mb-12 text-center text-2xl leading-[56px] text-gray-900">
           Discover articles and
           <br />
           tutorials to help you build

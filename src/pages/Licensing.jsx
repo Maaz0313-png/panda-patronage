@@ -1,9 +1,9 @@
-import React from "react";
-
 const Licensing = () => {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 text-gray-900">
-      <h1 className="mb-2 text-4xl font-normal">Licensing</h1>
+      <h1 className="tablet:text-4xl tablet:font-bold mb-2 text-2xl font-normal">
+        Licensing
+      </h1>
       <p className="mb-10 text-gray-500">September 27, 2023</p>
       <h2 className="mb-6 text-2xl font-normal">
         Software Licensing Agreement

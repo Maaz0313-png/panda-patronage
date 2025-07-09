@@ -83,7 +83,7 @@ const TeamSection = () => (
     <div className="w-full max-w-7xl px-6">
       <ScrollReveal
         as="h2"
-        className="tablet:text-5xl tablet:font-bold mb-4 w-full text-center text-4xl leading-11 font-normal [word-break:break-word]"
+        className="tablet:text-4xl tablet:font-bold mb-4 w-full text-center text-2xl leading-11 font-normal [word-break:break-word]"
       >
         Meet the Minds Behind Neutra
       </ScrollReveal>
