@@ -38,10 +38,10 @@ const projects = [
 const ProjectShowcase = () => (
   <section className="tablet:px-0 bg-white px-2 py-24">
     <ScrollReveal className="mx-auto mb-14 max-w-6xl text-center">
-      <h2 className="tablet:text-5xl mb-4 text-4xl font-bold text-gray-900">
+      <h2 className="tablet:text-5xl mb-4 text-2xl tablet:font-bold text-gray-900">
         Building Digital Excellence with Panda.
       </h2>
-      <p className="mx-auto max-w-2xl text-lg text-gray-500">
+      <p className="mx-auto max-w-2xl text-base tablet:text-lg text-gray-500">
         Discover the innovative marketing strategies that set Neutra apart,
         driving success in the digital landscape.
       </p>

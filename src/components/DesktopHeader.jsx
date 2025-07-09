@@ -48,7 +48,7 @@ export const DesktopHeader = ({ activeLink }) => {
         } `}
       >
         {/* ==== LOGO ==== */}
-        <Link to="/" className="flex-shrink-0">
+        <Link to="/" className={`flex-shrink-0 ${scrolled ? "p-1 pl-0" : ""}`}>
           <img
             src="/images/misc/logo.png"
             alt="Panda Patronage Logo"
@@ -61,13 +61,13 @@ export const DesktopHeader = ({ activeLink }) => {
         {/* ==== NAV LINKS + CTA ==== */}
         <div
           className={`flex items-center ${
-            scrolled ? "space-x-1" : "space-x-8"
+            scrolled ? "items-stretch space-x-1" : "space-x-8"
           }`}
         >
           {/* ----- NAV LINKS GROUP ----- */}
           <nav
             className={`flex flex-shrink-0 items-center ${
-              scrolled ? "rounded-xl bg-black py-1" : ""
+              scrolled ? "items-stretch rounded-xl bg-black p-1 pb-0" : ""
             } `}
           >
             <ul
@@ -141,10 +141,10 @@ export const DesktopHeader = ({ activeLink }) => {
           <button
             onMouseEnter={() => setCtaHovered(true)}
             onMouseLeave={() => setCtaHovered(false)}
-            className={`relative cursor-pointer overflow-hidden rounded-xl ${
+            className={`relative cursor-pointer overflow-hidden ${
               scrolled
-                ? "bg-white px-5 py-3.5 text-black"
-                : "bg-gray-900 px-0 py-1.5 text-white"
+                ? "flex flex-col items-center rounded-xl bg-white px-5 py-3.5 text-black"
+                : "rounded-lg bg-gray-900 px-0 py-1.5 text-white"
             } `}
           >
             <div

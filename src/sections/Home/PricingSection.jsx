@@ -55,10 +55,10 @@ const plans = [
 const PricingSection = () => (
     <section className="flex w-full flex-col items-center bg-[#f7f7f9] py-20">
       <ScrollReveal className="mb-12 text-center">
-        <span className="mb-3 inline-block rounded-full bg-white px-4 py-1 text-xs font-medium tracking-wide text-gray-900">
+        <span className="mb-3 inline-block rounded-full bg-white px-4 py-1 text-sm font-medium tracking-wide text-gray-900">
           Simple Pricing
         </span>
-        <h2 className="mb-2 text-3xl font-bold tablet:text-4xl">
+        <h2 className="mb-2 text-4xl tablet:font-bold tablet:text-5xl">
           Unlock Your Growth
         </h2>
       </ScrollReveal>
@@ -66,7 +66,7 @@ const PricingSection = () => (
         {plans.map((plan, idx) => (
           <ScrollReveal
             key={plan.name}
-            className={`flex w-full desktop:max-w-[370px] min-w-[290px] desktop:mx-0 flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
+            className={`flex w-full desktop:max-w-[370px] xs:min-w-[290px] desktop:mx-0 flex-1 flex-col rounded-2xl bg-white px-8 py-8 shadow-md ${
               plan.highlight
                 ? "relative overflow-hidden bg-gradient-to-tl from-black to-orange-900 text-white"
                 : "bg-white text-black"
@@ -74,7 +74,7 @@ const PricingSection = () => (
           >
             <div className="mb-2 flex items-center justify-between">
               <span
-                className={`text-lg font-semibold ${
+                className={`text-2xl ${
                   plan.highlight ? "text-white" : "text-black"
                 }`}
               >
@@ -106,7 +106,7 @@ const PricingSection = () => (
             </ul>
             <div className="mt-auto">
               <span
-                className={`block text-3xl font-bold tablet:text-4xl ${
+                className={`block text-4xl ${
                   plan.highlight ? "text-white" : "text-black"
                 }`}
               >

@@ -125,7 +125,7 @@ const ImpactStatement = () => (
     </ScrollReveal>
 
     <div className="flex w-full flex-1 items-center justify-center">
-      <MotionHeading className="xs:text-xl xs:mx-6 xs:leading-relaxed tablet:mx-0 tablet:text-4xl tablet:leading-snug desktop:text-5xl mx-4 max-w-4xl text-center text-lg leading-relaxed font-normal text-gray-900">
+      <MotionHeading className="xs:mx-6 xs:leading-relaxed tablet:mx-0 text-4xl tablet:leading-snug mx-4 max-w-4xl text-center leading-relaxed font-normal text-gray-900">
         We have been creating projects that remain relevant today, tomorrow, and
         for decades to come
       </MotionHeading>

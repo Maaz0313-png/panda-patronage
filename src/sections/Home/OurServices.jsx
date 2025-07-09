@@ -89,11 +89,11 @@ const OurServices = () => (
             <span className="mb-4 inline-block rounded-full bg-white/90 px-5 py-1 text-sm font-medium text-gray-900">
               Our services
             </span>
-            <h2 className="tablet:text-4xl mb-2 text-4xl leading-tight font-normal text-white">
+            <h2 className="tablet:text-4xl mb-2 text-2xl leading-tight font-normal text-white">
               Professional Services That Showcase Our Expertise.
             </h2>
           </div>
-          <p className="tablet:pb-3 tablet:self-end tablet:mt-0 tablet:text-left mt-4 max-w-md text-lg text-white/90">
+          <p className="tablet:pb-3 tablet:self-end tablet:mt-0 tablet:text-left tablet:text-lg mt-4 max-w-md text-base text-white/90">
             From creative design to technical solutions, our services define
             industry excellence.
           </p>
@@ -122,7 +122,7 @@ const OurServices = () => (
               ))}
             </div>
           </ScrollReveal>
-          <div className="desktop:h-[548px] flex w-full flex-col justify-between gap-4">
+          <div className="desktop:h-[548px] desktop:w-fit flex w-full flex-col justify-between gap-4">
             {/* Card 2: Social Media Management (row 1, col 2) */}
             <ScrollReveal className="desktop:w-[353.84px] flex min-h-[210px] w-full flex-col rounded-[9px] bg-white/90 p-6 shadow-md">
               <h3 className="mb-1 text-lg font-semibold text-gray-900">

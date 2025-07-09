@@ -49,10 +49,10 @@ const TestimonialsSection = () => {
         <span className="mb-3 inline-block rounded-full bg-gray-100 px-4 py-1 text-xs font-medium tracking-wide text-gray-700">
           Testimonials
         </span>
-        <h2 className="tablet:text-4xl mb-2 text-3xl font-bold">
+        <h2 className="tablet:text-4xl mb-2 text-2xl tablet:font-bold">
           Our satisfied customers
         </h2>
-        <p className="mx-auto max-w-xl text-base text-gray-500">
+        <p className="mx-auto max-w-xl text-base tablet:text-lg text-gray-500">
           Panda Patronage empowers teams with seamless Strategies and
           time-saving Solutions. Discover client success!
         </p>
