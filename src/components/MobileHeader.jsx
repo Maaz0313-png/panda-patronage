@@ -154,9 +154,9 @@ const MobileHeader = ({ activeLink }) => {
                 <motion.line
                   initial={{
                     x1: 4,
-                    y1: 4,
-                    x2: 26,
-                    y2: 4,
+                    y1: 7,
+                    x2: 24,
+                    y2: 7,
                     rotate: 0,
                   }}
                   animate={
@@ -166,14 +166,14 @@ const MobileHeader = ({ activeLink }) => {
                           y2: 15,
                           rotate: 45,
                           x1: 4,
-                          x2: 26,
+                          x2: 24,
                         }
                       : {
-                          y1: 4,
-                          y2: 4,
+                          y1: 7,
+                          y2: 7,
                           rotate: 0,
                           x1: 4,
-                          x2: 26,
+                          x2: 24,
                         }
                   }
                   stroke="hsl(0, 0%, 18%)"
@@ -186,12 +186,14 @@ const MobileHeader = ({ activeLink }) => {
                   initial={{
                     x1: 4,
                     y1: 15,
-                    x2: 26,
+                    x2: 24,
                     y2: 15,
                     opacity: 1,
                   }}
                   animate={
-                    isOpen ? { opacity: 0 } : { opacity: 1, y1: 15, y2: 15 }
+                    isOpen
+                      ? { opacity: 0 }
+                      : { opacity: 1, x1: 4, x2: 24, y1: 15, y2: 15 }
                   }
                   stroke="hsl(0, 0%, 18%)"
                   strokeWidth="3"
@@ -201,9 +203,9 @@ const MobileHeader = ({ activeLink }) => {
                 <motion.line
                   initial={{
                     x1: 4,
-                    y1: 26,
-                    x2: 26,
-                    y2: 26,
+                    y1: 23,
+                    x2: 24,
+                    y2: 23,
                     rotate: 0,
                   }}
                   animate={
@@ -213,14 +215,14 @@ const MobileHeader = ({ activeLink }) => {
                           y2: 15,
                           rotate: -45,
                           x1: 4,
-                          x2: 26,
+                          x2: 24,
                         }
                       : {
-                          y1: 26,
-                          y2: 26,
+                          y1: 23,
+                          y2: 23,
                           rotate: 0,
                           x1: 4,
-                          x2: 26,
+                          x2: 24,
                         }
                   }
                   stroke="hsl(0, 0%, 18%)"
