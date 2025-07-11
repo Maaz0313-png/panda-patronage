@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const NotFound = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 px-4">
-      <span className="mb-4 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-black">
+      <span className="mb-4 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-[#1f1f1f]">
         404 error
       </span>
       <h1 className="tablet:text-4xl tablet:font-bold mb-2 text-center text-2xl text-gray-900">

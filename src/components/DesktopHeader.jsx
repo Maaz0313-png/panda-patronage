@@ -36,19 +36,22 @@ export const DesktopHeader = ({ activeLink }) => {
 
   return (
     <header
-      className={`desktop:block hidden overflow-x-hidden ${scrolled ? "fixed top-0 left-0 z-50 w-full" : "relative"}`}
+      className={`desktop:block hidden w-full max-w-[1200px] overflow-x-hidden p-6 ${scrolled ? "fixed top-0 left-0 z-50" : "relative mx-auto"}`}
     >
-      <motion.div
+      <motion.nav
         layout
         transition={{ type: "spring", stiffness: 150, damping: 40 }}
         className={`flex items-center ${
           scrolled
             ? "mx-auto mt-3 h-[58px] w-[529px] gap-1 rounded-[16px] bg-[rgba(26,26,26,0.5)] p-2 backdrop-blur-[5px]"
-            : "h-[84px] w-full justify-between bg-transparent px-[152px] py-0"
+            : "h-min w-full justify-between bg-transparent"
         } `}
       >
         {/* ==== LOGO ==== */}
-        <Link to="/" className={`flex-shrink-0 ${scrolled ? "p-1 pl-0" : ""}`}>
+        <Link
+          to="/"
+          className={`flex-shrink-0 ${scrolled ? "p-1 pl-0" : "p-2"}`}
+        >
           <img
             src="/images/misc/logo.png"
             alt="Panda Patronage Logo"
@@ -61,18 +64,20 @@ export const DesktopHeader = ({ activeLink }) => {
         {/* ==== NAV LINKS + CTA ==== */}
         <div
           className={`flex items-center ${
-            scrolled ? "items-stretch space-x-1" : "space-x-8"
+            scrolled ? "items-stretch gap-1" : "gap-4"
           }`}
         >
           {/* ----- NAV LINKS GROUP ----- */}
           <nav
-            className={`flex flex-shrink-0 items-center ${
-              scrolled ? "items-stretch rounded-xl bg-black p-1 pb-0" : ""
+            className={`flex flex-shrink-0 ${
+              scrolled
+                ? "items-stretch rounded-xl bg-[#1f1f1f] p-1 pb-0"
+                : "items-center"
             } `}
           >
             <ul
               className={`m-0 flex list-none items-center ${
-                scrolled ? "space-x-0" : "space-x-3"
+                scrolled ? "gap-0" : "gap-1"
               } p-0`}
             >
               {links.map(({ label, href }) => {
@@ -84,55 +89,55 @@ export const DesktopHeader = ({ activeLink }) => {
                 if (isActive && hasValidActive) {
                   return (
                     <li
-                      className={`relative ${
-                        scrolled ? "px-[16px] pt-1 pb-2" : ""
+                      className={`relative px-4 ${
+                        scrolled ? "pt-1 pb-2" : "py-2"
                       } `}
                       key={label}
                     >
                       <Link
                         to={href}
                         className={`relative cursor-[unset] text-sm font-medium ${
-                          scrolled ? "text-white" : "text-black"
+                          scrolled ? "text-white" : "text-[#1f1f1f]"
                         } `}
                       >
                         {label}
                         <span
                           className={`absolute bottom-[-5px] left-1/2 size-[3px] -translate-x-1/2 transform rounded-full ${
-                            scrolled ? "bg-white" : "bg-black"
+                            scrolled ? "bg-white" : "bg-[#1f1f1f]"
                           } `}
                         />
                       </Link>
                     </li>
                   );
-                }
-
-                return (
-                  <motion.li
-                    key={label}
-                    className={`relative ${
-                      scrolled ? "px-[10px] pt-1 pb-2" : ""
-                    } `}
-                    initial="rest"
-                    whileHover="hover"
-                    animate="rest"
-                  >
-                    <Link
-                      to={href}
-                      className={`relative px-2 py-1 text-sm font-medium ${
-                        scrolled ? "text-white" : "text-black"
+                } else {
+                  return (
+                    <motion.li
+                      className={`relative px-4 ${
+                        scrolled ? "pt-1 pb-2" : "py-2"
                       } `}
+                      key={label}
+                      initial="rest"
+                      whileHover="hover"
+                      animate="rest"
                     >
-                      {label}
-                      {/* Show the dot on hover for all non-active links */}
-                      <motion.span
-                        className={`absolute right-0 bottom-[0px] left-0 size-[3px] rounded-full ${
-                          scrolled ? "bg-white" : "bg-[#8e8e8e]"
+                      <Link
+                        to={href}
+                        className={`relative text-sm font-medium ${
+                          scrolled ? "text-white" : "text-[#1f1f1f]"
                         } `}
-                        variants={dotVariants}
-                      />
-                    </Link>
-                  </motion.li>
-                );
+                      >
+                        {label}
+                        {/* Show the dot on hover for all non-active links */}
+                        <motion.span
+                          className={`absolute right-0 bottom-[0px] left-0 size-[3px] rounded-full ${
+                            scrolled ? "bg-white" : "bg-[#8e8e8e]"
+                          } `}
+                          variants={dotVariants}
+                        />
+                      </Link>
+                    </motion.li>
+                  );
+                }
               })}
             </ul>
           </nav>
@@ -143,7 +148,7 @@ export const DesktopHeader = ({ activeLink }) => {
             onMouseLeave={() => setCtaHovered(false)}
             className={`relative cursor-pointer overflow-hidden ${
               scrolled
-                ? "flex flex-col items-center rounded-xl bg-white px-5 py-3.5 text-black"
+                ? "flex flex-col items-center rounded-xl bg-white px-5 py-3.5 text-[#1f1f1f]"
                 : "rounded-lg bg-gray-900 px-0 py-1.5 text-white"
             } `}
           >
@@ -159,7 +164,7 @@ export const DesktopHeader = ({ activeLink }) => {
                 animate={ctaHovered ? { y: "-100%" } : { y: "0%" }}
                 transition={{ duration: 0.45, ease: "easeInOut" }}
                 className={`absolute inset-0 flex items-center justify-center rounded-[75%] text-sm font-medium ${
-                  scrolled ? "text-black" : "text-white"
+                  scrolled ? "text-[#1f1f1f]" : "text-white"
                 } `}
               >
                 Let&apos;s Talk
@@ -169,7 +174,7 @@ export const DesktopHeader = ({ activeLink }) => {
                 animate={ctaHovered ? { y: "0%" } : { y: "100%" }}
                 transition={{ duration: 0.45, ease: "easeInOut" }}
                 className={`absolute inset-0 flex items-center justify-center rounded-[75%] text-sm font-medium ${
-                  scrolled ? "text-black" : "text-white"
+                  scrolled ? "text-[#1f1f1f]" : "text-white"
                 } `}
               >
                 Let&apos;s Talk
@@ -177,7 +182,7 @@ export const DesktopHeader = ({ activeLink }) => {
             </div>
           </button>
         </div>
-      </motion.div>
+      </motion.nav>
     </header>
   );
 };

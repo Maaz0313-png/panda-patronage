@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <ScrollReveal className="tablet:px-6 m-4 flex flex-col justify-between rounded-2xl p-8 tablet:pt-12 font-sans text-white [background:linear-gradient(-25deg,black_55%,#7c2d12_100%)]">
-      <div className="tablet:grid-cols-3 tablet:justify-between desktop:gap-12 pb-8 desktop:pb-12 mx-auto grid w-full max-w-6xl grid-cols-1 gap-8">
+    <ScrollReveal className="tablet:px-6 tablet:pt-12 m-4 flex flex-col justify-between rounded-2xl p-8 font-sans text-white [background:linear-gradient(-25deg,[#1f1f1f]_55%,#7c2d12_100%)]">
+      <div className="tablet:grid-cols-3 tablet:justify-between desktop:gap-12 desktop:pb-12 mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 pb-8">
         <div className="tablet:col-span-1 flex flex-col">
           <img
             src="/images/misc/footer-logo.png"

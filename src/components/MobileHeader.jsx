@@ -112,7 +112,7 @@ const MobileHeader = ({ activeLink }) => {
               onMouseLeave={() => setCtaHovered(false)}
               className={`relative cursor-pointer overflow-hidden rounded-xl ${
                 scrolled
-                  ? "bg-white px-5 py-3.5 text-black"
+                  ? "bg-white px-5 py-3.5 text-[#1f1f1f]"
                   : "bg-gray-900 px-0 py-1.5 text-white"
               } `}
             >
@@ -128,7 +128,7 @@ const MobileHeader = ({ activeLink }) => {
                   animate={ctaHovered ? { y: "-100%" } : { y: "0%" }}
                   transition={{ duration: 0.45, ease: "easeInOut" }}
                   className={`absolute inset-0 flex items-center justify-center rounded-[75%] text-sm font-medium ${
-                    scrolled ? "text-black" : "text-white"
+                    scrolled ? "text-[#1f1f1f]" : "text-white"
                   } `}
                 >
                   Let&apos;s Talk
@@ -138,7 +138,7 @@ const MobileHeader = ({ activeLink }) => {
                   animate={ctaHovered ? { y: "0%" } : { y: "100%" }}
                   transition={{ duration: 0.45, ease: "easeInOut" }}
                   className={`absolute inset-0 flex items-center justify-center rounded-[75%] text-sm font-medium ${
-                    scrolled ? "text-black" : "text-white"
+                    scrolled ? "text-[#1f1f1f]" : "text-white"
                   } `}
                 >
                   Let&apos;s Talk

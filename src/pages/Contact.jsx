@@ -88,7 +88,7 @@ const Contact = () => {
         {/* Right Form */}
         <form className="tablet:ml-auto flex w-full max-w-[420px] flex-col gap-4">
           <div className="w-full">
-            <label className="mb-1 block text-xs text-black" htmlFor="name">
+            <label className="mb-1 block text-xs text-[#1f1f1f]" htmlFor="name">
               Name
             </label>
             <input
@@ -100,7 +100,10 @@ const Contact = () => {
             />
           </div>
           <div className="w-full">
-            <label className="mb-1 block text-xs text-black" htmlFor="email">
+            <label
+              className="mb-1 block text-xs text-[#1f1f1f]"
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -136,7 +139,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="mt-2 w-full rounded-lg bg-black py-2 text-sm font-medium text-white transition hover:cursor-pointer hover:bg-[rgb(56,56,56)]"
+            className="mt-2 w-full rounded-lg bg-[#1f1f1f] py-2 text-sm font-medium text-white transition hover:cursor-pointer hover:bg-[rgb(56,56,56)]"
           >
             Submit
           </button>
